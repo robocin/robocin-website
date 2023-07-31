@@ -1,7 +1,11 @@
+import useTranslation from "@/hooks/useTranslation"
+
 export default function Home() {
+  const t = useTranslation()
+
   return (
     <div>
-      This is the Home page.
+      {t.content}
     </div>
   )
 }
