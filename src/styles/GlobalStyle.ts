@@ -9,6 +9,7 @@ const GlobalStyle = createGlobalStyle`
 
     html,
     body {
+        font-size: 16px;
         max-width: 100vw;
         overflow-x: hidden;
     }
