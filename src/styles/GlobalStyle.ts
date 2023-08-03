@@ -13,6 +13,11 @@ const GlobalStyle = createGlobalStyle`
         max-width: 100vw;
         overflow-x: hidden;
     }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
 `;
 
 export default GlobalStyle;
