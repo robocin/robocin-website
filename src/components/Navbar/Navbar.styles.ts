@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import Link from 'next/link'
+import Image from 'next/image'
 
 import styles from '@/styles/styles'
 
@@ -14,12 +15,16 @@ export const Container = styled.nav`
   position: fixed;
   width: 100%;
   height: 85px;
-  padding: 21px 96px;
+  padding: 21px 6.6%;
   background-color: ${styles.colors.white};
 
   font-size: ${styles.fontSizes.sm};
   font-weight: ${styles.fontWeights.semibold};
   text-transform: uppercase;
+
+  @media (max-width: 1120px) {
+    font-size: ${styles.fontSizes.xxs};
+  }
 `
 
 export const NavOptions = styled.div`
@@ -27,7 +32,12 @@ export const NavOptions = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 50%;
-  gap: 25px;
+  min-width: fit-content;
+  gap: 32px;
+
+  @media (max-width: 912px) {
+    display: none;
+  }
 `
 
 export const StyledLink = styled(Link)<LinkProps>`
@@ -46,4 +56,16 @@ export const StyledSelect = styled.select`
   text-transform: inherit;
   text-decoration: none;
   background-color: transparent;
+  cursor: pointer;
+`
+
+export const MenuIcon = styled(Image)`
+  width: 24px;
+  height: auto;
+  opacity: 0.5;
+  cursor: pointer;
+
+  @media (min-width: 913px) {
+    display: none;
+  }
 `

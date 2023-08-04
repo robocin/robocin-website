@@ -11,9 +11,11 @@ interface NavOption {
 }
 
 export interface NavbarProps {
-  navOptions: NavOption[]
-  languages: LanguageOption[]
-  router: NextRouter
+  navOptions?: NavOption[]
+  languages?: LanguageOption[]
+  router?: NextRouter
   locale?: string
-  onChangeLanguage: React.ChangeEventHandler<HTMLSelectElement>
+  isMenuOpen?: boolean
+  onChangeLanguage?: React.ChangeEventHandler<HTMLSelectElement>
+  onPressMenu?: () => void
 }

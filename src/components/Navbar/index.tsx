@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useRouter } from 'next/router'
 
 import useTranslation from '@/hooks/useTranslation'
@@ -6,6 +6,7 @@ import useTranslation from '@/hooks/useTranslation'
 import Main from './Navbar'
 
 const Navbar = () => {
+  const [openMenu, setOpenMenu] = useState<boolean>(false)
   const router = useRouter()
   const { locale } = router
 
@@ -46,6 +47,10 @@ const Navbar = () => {
     router.push(router.pathname, router.asPath, { locale: selectedLocale })
   }
 
+  const handleMenu = () => {
+    setOpenMenu((prev) => !prev)
+  }
+
   return (
     <Main
       router={router}
@@ -53,6 +58,8 @@ const Navbar = () => {
       navOptions={navOptions}
       languages={languages}
       onChangeLanguage={handleChangeLanguage}
+      onPressMenu={handleMenu}
+      isMenuOpen={openMenu}
     />
   )
 }

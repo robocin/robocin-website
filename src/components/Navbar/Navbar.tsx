@@ -1,7 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
 
-import { LogoWithLabel } from '@/assets'
+import { LogoWithLabel, MenuIcon, CloseIcon } from '@/assets'
+
+import { Menu } from './components'
 
 import * as S from './Navbar.styles'
 
@@ -12,16 +14,18 @@ const Navbar = ({
   locale,
   navOptions,
   languages,
+  isMenuOpen,
   onChangeLanguage,
+  onPressMenu,
 }: NavbarProps) => (
   <S.Container>
     <Image src={LogoWithLabel} alt="logo" />
     <S.NavOptions>
-      {navOptions.map((option, index) => (
+      {navOptions?.map((option, index) => (
         <S.StyledLink
           key={index + option.link}
           href={option.link}
-          active={router.asPath === option.link ? 'true' : 'false'}
+          active={router?.asPath === option.link ? 'true' : 'false'}
         >
           {option.label}
         </S.StyledLink>
@@ -31,7 +35,7 @@ const Navbar = ({
         onChange={onChangeLanguage}
         defaultValue={locale}
       >
-        {languages.map((language, index) => (
+        {languages?.map((language, index) => (
           <option
             key={index + language.label}
             value={language.value}
@@ -40,6 +44,20 @@ const Navbar = ({
         ))}
       </S.StyledSelect>
     </S.NavOptions>
+    <S.MenuIcon
+      src={isMenuOpen ? CloseIcon : MenuIcon}
+      alt="Open menu"
+      onClick={onPressMenu}
+    />
+    {isMenuOpen && (
+      <Menu
+        navOptions={navOptions}
+        languages={languages}
+        router={router}
+        locale={locale}
+        onChangeLanguage={onChangeLanguage}
+      />
+    )}
   </S.Container>
 )
 
