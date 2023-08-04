@@ -34,12 +34,14 @@ const Navbar = ({
         name="Idioma"
         onChange={onChangeLanguage}
         defaultValue={locale}
+        data-testid="language"
       >
         {languages?.map((language, index) => (
           <option
             key={index + language.label}
             value={language.value}
             label={language.label}
+            data-testid={language.label}
           />
         ))}
       </S.StyledSelect>
@@ -48,6 +50,7 @@ const Navbar = ({
       src={isMenuOpen ? CloseIcon : MenuIcon}
       alt="Open menu"
       onClick={onPressMenu}
+      data-testid="menu-button"
     />
     {isMenuOpen && (
       <Menu
@@ -56,6 +59,7 @@ const Navbar = ({
         router={router}
         locale={locale}
         onChangeLanguage={onChangeLanguage}
+        data-testid="menu"
       />
     )}
   </S.Container>

@@ -12,7 +12,7 @@ const Menu = ({
   onChangeLanguage,
 }: Omit<NavbarProps, 'isMenuOpen' | 'onPressMenu'>) => {
   return (
-    <S.Container>
+    <S.Container data-testid="menu">
       {navOptions?.map((option, index) => (
         <S.MenuStyledLink
           key={index + option.label}
