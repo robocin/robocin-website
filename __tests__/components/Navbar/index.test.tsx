@@ -1,6 +1,13 @@
 import React from 'react'
 import { render, fireEvent } from '@testing-library/react'
 import { Navbar } from '@/components'
+import type * as ReactDom from 'react-dom'
+
+// Mocking ReactDOM to avoid 'TypeError: (0 , _reactdom.preload) is not a function'
+jest.mock('react-dom', () => ({
+  ...jest.requireActual<typeof ReactDom>('react-dom'),
+  preload: jest.fn(),
+}))
 
 // Mocking next/router to provide useRouter functionality
 jest.mock('next/router', () => ({
@@ -17,7 +24,7 @@ jest.mock('../../../src/hooks/useTranslation', () => () => ({
     options: {
       home: 'Home',
       categories: 'Categories',
-      team: 'Team',
+      // team: 'Team',
       papers: 'Papers',
     },
   },
@@ -33,7 +40,7 @@ test('renders the navigation options correctly', () => {
   const { getByText } = render(<Navbar />)
   expect(getByText('Home')).toBeInTheDocument()
   expect(getByText('Categories')).toBeInTheDocument()
-  expect(getByText('Team')).toBeInTheDocument()
+  // expect(getByText('Team')).toBeInTheDocument()
   expect(getByText('Papers')).toBeInTheDocument()
 })
 

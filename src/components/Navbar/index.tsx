@@ -22,10 +22,6 @@ const Navbar = () => {
       link: '/categories',
     },
     {
-      label: t.navbar.options.team,
-      link: '/team',
-    },
-    {
       label: t.navbar.options.papers,
       link: '/papers',
     },
