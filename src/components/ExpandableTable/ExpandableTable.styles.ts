@@ -32,7 +32,7 @@ export const TopBar = styled.div`
 `
 
 export const Arrow = styled(Image)<ArrowProps>`
-  width: 12px;
+  width: 0.75rem;
   height: auto;
   transform: ${({ open }) => open && `rotate(90deg)`};
 
