@@ -14,7 +14,7 @@ jest.mock(
   '../../../src/components/ExpandableTable/mockTableData',
   () => () => ({
     label: 'VSSL - Results',
-    th: ['Year/Competition', 'LARC', 'IRONCup'],
+    th: ['Year', 'LARC', 'IRONCup'],
     trs: [
       ['2021', '1º 3v3 RL', '1º'],
       ['2020', '4º DET, 5º RL', '3º RL, 5º DET'],
