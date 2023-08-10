@@ -22,18 +22,20 @@ const ExpandableTable = ({
       </S.TopBar>
       {isTableOpen && (
         <S.Table data-testid="table">
-          <tr>
-            {data?.th?.map((cell: string) => (
-              <th>{cell}</th>
-            ))}
-          </tr>
-          {data?.trs?.map((row: string[]) => (
+          <tbody>
             <tr>
-              {row?.map((cell: string) => (
-                <td>{cell}</td>
+              {data?.th?.map((cell: string, index) => (
+                <th key={index}>{cell}</th>
               ))}
             </tr>
-          ))}
+            {data?.trs?.map((row: string[], index) => (
+              <tr key={index}>
+                {row?.map((cell: string, index) => (
+                  <td key={index}>{cell}</td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
         </S.Table>
       )}
     </S.Container>
