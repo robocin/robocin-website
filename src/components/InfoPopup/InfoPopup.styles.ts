@@ -17,7 +17,7 @@ export const Container = styled.div`
   min-height: fit-content;
 
   position: fixed;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -104,10 +104,23 @@ export const BackgroundImage = styled(Image)<BackgroundImageProps>`
 
   position: absolute;
 
+  @media (max-width: 760px) {
+    width: 20%;
+  }
+
+  @media (max-width: 414px) {
+    width: 20%;
+    bottom: 60%;
+  }
+
   ${({ position }) =>
     position === 'right' &&
     css`
       left: 75%;
-      bottom: 70%;
+      bottom: 65%;
+
+      @media (max-width: 414px) {
+        bottom: 80%;
+      }
     `}
 `
