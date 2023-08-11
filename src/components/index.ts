@@ -1,5 +1,4 @@
-import Navbar from "./Navbar";
+import Navbar from './Navbar'
+import ExpandableTable from './ExpandableTable'
 
-export {
-    Navbar,
-}
+export { Navbar, ExpandableTable }
