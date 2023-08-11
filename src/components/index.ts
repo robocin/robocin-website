@@ -1,4 +1,5 @@
 import Navbar from './Navbar'
 import ExpandableTable from './ExpandableTable'
+import InfoPopup from './InfoPopup'
 
-export { Navbar, ExpandableTable }
+export { Navbar, ExpandableTable, InfoPopup }
