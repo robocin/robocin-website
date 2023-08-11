@@ -22,6 +22,8 @@ export const Container = styled.nav`
   font-weight: ${styles.fontWeights.semibold};
   text-transform: uppercase;
 
+  z-index: 10;
+
   @media (max-width: 1120px) {
     font-size: ${styles.fontSizes.xxs};
   }
