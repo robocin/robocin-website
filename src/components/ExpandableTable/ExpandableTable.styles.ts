@@ -53,8 +53,7 @@ export const Table = styled.table`
     vertical-align: middle;
   }
 
-  th,
-  td:first-child {
+  th {
     font-weight: ${styles.fontWeights.extrabold};
     text-transform: uppercase;
   }
