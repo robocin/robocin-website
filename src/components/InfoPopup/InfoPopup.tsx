@@ -16,7 +16,12 @@ const InfoPopup = ({
 }: InfoPopupProps) => {
   return (
     <S.Container>
-      <S.CloseIcon src={LeftArrow} alt="Fechar popup" onClick={onClose} />
+      <S.CloseIcon
+        src={LeftArrow}
+        alt="Fechar popup"
+        onClick={onClose}
+        data-testid="close-button"
+      />
       <S.Content>
         <S.Title>{title}</S.Title>
         <S.Description>{description}</S.Description>
@@ -26,11 +31,13 @@ const InfoPopup = ({
               position="left"
               src={backgroundImages.leftImage}
               alt="Background image"
+              data-testid="left-img"
             />
             <S.BackgroundImage
               position="right"
               src={backgroundImages.rightImage}
               alt="Background image"
+              data-testid="right-img"
             />
           </>
         )}
