@@ -34,6 +34,21 @@ const ptBR = {
       },
       activity_card_button: 'Ver mais',
     },
+    about_us: {
+      title: 'Sobre nós',
+      description: `Somos um grupo de pesquisa e desenvolvimento 
+        em robótica do Centro de Informática da UFPE. Começamos
+        com apenas 12 estudantes e dois professores em 2015 e hoje
+        contamos com dezenas de membros e premiações nacionais e 
+        internacionais. Desenvolvemos tecnologias aplicadas
+        à robótica com inteligência artificial, visão computacional, 
+        engenharia mecatrônica e eletrônica.`,
+      features: {
+        awards: 'Premiações',
+        papers: 'Publicações',
+        members: 'Membros',
+      },
+    },
     infoPopup: {
       competitions: {
         title: 'Competições',

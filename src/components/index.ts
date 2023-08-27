@@ -2,6 +2,8 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import ExpandableTable from './ExpandableTable'
 import InfoPopup from './InfoPopup'
-import Activities from './Home/Activities'
 
-export { Navbar, Footer, ExpandableTable, InfoPopup, Activities }
+import Activities from './Home/Activities'
+import AboutUs from './Home/AboutUs'
+
+export { Navbar, Footer, ExpandableTable, InfoPopup, Activities, AboutUs }

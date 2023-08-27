@@ -34,6 +34,20 @@ const en = {
       },
       activity_card_button: 'See more',
     },
+    about_us: {
+      title: 'About Us',
+      description: `We're a robotics Research & Development group
+      from the Federal University of Pernambuco, Brazil. 
+      We started out with 15 students and two professors
+      back in 2015 and today we rely on dozens of members and awards. 
+      We develop tecnologies applied to robotics with machine learning,
+      computer vision, mechatronics and electronics engineering.`,
+      features: {
+        awards: 'Awards',
+        papers: 'Papers',
+        members: 'Members',
+      },
+    },
     infoPopup: {
       competitions: {
         title: 'Competitions',

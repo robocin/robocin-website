@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 import useTranslation from '@/hooks/useTranslation'
 
-import { Footer, InfoPopup, Activities } from '@/components'
+import { Footer, InfoPopup, Activities, AboutUs } from '@/components'
 
 import * as S from './home.styles'
 
@@ -33,6 +33,7 @@ export default function Home() {
           translate={t.home.activities}
           onClickActivity={handleClickActivity}
         />
+        <AboutUs translate={t.home.about_us} />
       </S.ContentWrap>
       {infoPopupOpen && (
         <InfoPopup
