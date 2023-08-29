@@ -49,6 +49,11 @@ const ptBR = {
         members: 'Membros',
       },
     },
+    sponsors: {
+      title: 'Nossos Patrocinadores',
+      call_to_action: `Quer sua marca aqui também? 
+      Entre em contato:`,
+    },
     infoPopup: {
       competitions: {
         title: 'Competições',

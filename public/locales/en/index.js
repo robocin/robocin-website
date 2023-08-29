@@ -48,6 +48,11 @@ const en = {
         members: 'Members',
       },
     },
+    sponsors: {
+      title: 'Our Sponsors',
+      call_to_action: `Do you want your brand here as well?
+      Contact us:`,
+    },
     infoPopup: {
       competitions: {
         title: 'Competitions',
