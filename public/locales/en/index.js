@@ -17,6 +17,39 @@ const en = {
   },
   content: 'This content is in English',
   home: {
+    banner: {
+      headline: {
+        title: `"Brazilian team wins second title in the world's 
+        largest robotics competition"`,
+        complement: `Read more at:`,
+      },
+      achievements: [
+        {
+          title: 'Small Size League World Champions',
+          description: '1st place on RoboCup 2023 - Division B',
+        },
+        {
+          title: 'Small Size League Latin American Champion',
+          description:
+            '1st place on Latin American Robotics Competition 2022 and 1st place on RoboCup 2023',
+        },
+        {
+          title: '2D Simulation Latin American Champion',
+          description:
+            '1st place on Latin American Robotics Competition 2022, 2nd at IronCup 2023 and 6th at RoboCup 2023',
+        },
+        {
+          title: 'Very Small Size Soccer Latin American and Brazilian Champion',
+          description:
+            '1st and 3th place on Latin American Robotics Competition 2022, 1st and 2nd at IronCup 2023',
+        },
+        {
+          title: 'Best Brazilian Team Campaign of 2022',
+          description:
+            'Five championships won, first Brazilian team to win the RoboCup in the Small Size League',
+        },
+      ],
+    },
     activities: {
       competitions_card: {
         title: 'Competitions',

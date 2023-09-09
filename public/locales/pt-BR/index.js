@@ -17,6 +17,39 @@ const ptBR = {
   },
   content: 'Esse conteúdo está em português',
   home: {
+    banner: {
+      headline: {
+        title: `"Equipe da UFPE conquista o bicampeonato da maior competição de
+        robótica do mundo"`,
+        complement: 'Leia mais em:',
+      },
+      achievements: [
+        {
+          title: 'Campeões Mundiais em SSL',
+          description: '1º Lugar na RoboCup 2023 - Divisão B',
+        },
+        {
+          title: 'Campeão Latino-americano de SSL',
+          description:
+            '1º Lugar na Competição Latino-americana de Robótica e 1º Lugar na RoboCup 2023',
+        },
+        {
+          title: 'Campeão Latino-americano de Simulação 2D',
+          description:
+            '1º Lugar na Competição Latino-americana de Robótica, 2º na IronCup 2023 e 6º na RoboCup 2023',
+        },
+        {
+          title: 'Campeão Latino-americano e nacional de VSS',
+          description:
+            '1º e 3º Lugar na Competição Latino-americana de Robótica de 2022, 1º e 2º na IronCup 2023',
+        },
+        {
+          title: 'Melhor campanha de um time brasileiro de 2022',
+          description:
+            'Cinco campeonatos ganhos, sendo o primeiro time brasileiro a ganhar um na RoboCup na categoria de SSL',
+        },
+      ],
+    },
     activities: {
       competitions_card: {
         title: 'Competições',
