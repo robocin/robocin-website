@@ -2,22 +2,17 @@ import React from 'react'
 
 import typeImageMap from './utils/typeImageMap'
 
-import { InfoPopupProps } from './interfaces'
+import { InfoPopup } from './interfaces'
 
 import Main from './InfoPopup'
 
-const InfoPopup = ({
-  title,
-  description,
-  type = 'none',
-  onClose,
-}: InfoPopupProps) => {
+const InfoPopup = ({ translate, type, onClose }: InfoPopup) => {
   const backgroundImages = typeImageMap[type as keyof typeof typeImageMap]
 
   return (
     <Main
-      title={title}
-      description={description}
+      title={translate[type].title}
+      description={translate[type].description}
       backgroundImages={backgroundImages}
       onClose={onClose}
     />

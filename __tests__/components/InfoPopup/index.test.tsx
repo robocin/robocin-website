@@ -10,10 +10,33 @@ jest.mock('react-dom', () => ({
 }))
 
 // Mock popup data
+// const props = {
+//   title: 'Mock title',
+//   type: 'none' as 'none',
+//   description: 'Mock description',
+//   backgroundImages: true,
+//   onClose: () => console.log('Call mock function'),
+// }
+
 const props = {
-  title: 'Mock title',
-  type: 'none' as 'none',
-  description: 'Mock description',
+  translate: {
+    competitions: {
+      title: 'Competitions',
+      description: `We take part in national and 
+      international robotics competitions such as 
+      RoboCup, LARC and IRONcup.`,
+    },
+    research: {
+      title: 'Research',
+      description:
+        'We do research in various problems in the field of robotics',
+    },
+    development: {
+      title: 'Development',
+      description: 'We develop the software and hardware of our robots',
+    },
+  },
+  type: 'development' as const,
   onClose: () => console.log('Call mock function'),
 }
 
@@ -24,7 +47,7 @@ test('renders InfoPopup component', () => {
 
 // Test 2: render InfoPopup passing prop type other than 'none'
 test('renders InfoPopup with type development', () => {
-  const { getByTestId } = render(<InfoPopup {...props} type="development" />)
+  const { getByTestId } = render(<InfoPopup {...props} />)
 
   const leftImage = getByTestId('left-img')
   const rightImage = getByTestId('right-img')

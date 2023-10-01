@@ -92,7 +92,7 @@ export const Title = styled.p`
 export const Description = styled.p`
   font-size: ${styles.fontSizes.lg};
 
-  text-align: justify;
+  text-align: center;
   text-justify: inter-word;
 `
 
