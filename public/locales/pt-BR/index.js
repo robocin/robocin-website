@@ -104,6 +104,13 @@ const ptBR = {
       },
     },
   },
+  publications_page: {
+    header: {
+      title: 'Publicações',
+      description:
+        'Veja nossos Team Description Papers e nossas pesquisas abaixo',
+    },
+  },
 }
 
 export default ptBR

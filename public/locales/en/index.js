@@ -4,7 +4,7 @@ const en = {
       home: 'Home',
       categories: 'Categories',
       team: 'Team',
-      papers: 'Papers',
+      papers: 'Publications',
     },
   },
   footer: {
@@ -102,6 +102,12 @@ const en = {
         title: 'Development',
         description: 'We develop the software and hardware of our robots',
       },
+    },
+  },
+  publications_page: {
+    header: {
+      title: 'Publications',
+      description: 'Check out our Team Description Papers and research below',
     },
   },
 }
