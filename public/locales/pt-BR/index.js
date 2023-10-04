@@ -110,6 +110,13 @@ const ptBR = {
       description:
         'Veja nossos Team Description Papers e nossas pesquisas abaixo',
     },
+    team_description_papers: {
+      title: 'Team Description Papers',
+      description: `Descrição da seção`,
+    },
+    publication_card: {
+      url_label: 'Artigo',
+    },
   },
 }
 

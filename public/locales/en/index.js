@@ -109,6 +109,13 @@ const en = {
       title: 'Publications',
       description: 'Check out our Team Description Papers and research below',
     },
+    team_description_papers: {
+      title: 'Team Description Papers',
+      description: `Section Description`,
+    },
+    publication_card: {
+      url_label: 'Article',
+    },
   },
 }
 
