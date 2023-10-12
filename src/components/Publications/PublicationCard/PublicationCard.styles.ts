@@ -16,7 +16,7 @@ export const Container = styled.div`
   align-items: center;
 
   border-radius: 24px;
-  border: 1px solid ${styles.colors.darkGray};
+  border: 2px solid ${styles.colors.secondary};
   box-shadow: 10px 0 ${styles.colors.secondary};
 
   background-color: white;

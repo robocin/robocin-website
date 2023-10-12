@@ -117,6 +117,19 @@ const ptBR = {
     publication_card: {
       url_label: 'Artigo',
     },
+    publications_list: {
+      header: {
+        title: 'Nossas Publicações',
+        description: 'Veja nossas publicações',
+      },
+      default_filter_options: {
+        all: 'Todas',
+        recent: 'Mais recentes',
+      },
+      publication_card: {
+        url_label: 'Artigo',
+      },
+    },
   },
 }
 

@@ -2,7 +2,9 @@ import React from 'react'
 
 import useTranslation from '@/hooks/useTranslation'
 
-import { Header } from '@/components/Publications'
+import mockPublications from '@/components/Publications/PublicationsList/utils/mockData'
+
+import { Header, PublicationsList } from '@/components/Publications'
 import { Footer } from '@/components'
 
 import { PageWrap, ContentWrap } from '../pages.styles'
@@ -14,6 +16,10 @@ const PublicationsPage = () => {
     <PageWrap>
       <ContentWrap>
         <Header translate={t.publications_page.header} />
+        <PublicationsList
+          translate={t.publications_page.publications_list}
+          publications={mockPublications}
+        />
       </ContentWrap>
       <Footer />
     </PageWrap>

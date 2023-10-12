@@ -113,8 +113,18 @@ const en = {
       title: 'Team Description Papers',
       description: `Section Description`,
     },
-    publication_card: {
-      url_label: 'Article',
+    publications_list: {
+      header: {
+        title: 'Our Publications',
+        description: 'Check out out publications below',
+      },
+      default_filter_options: {
+        all: 'All',
+        recent: 'Most recent',
+      },
+      publication_card: {
+        url_label: 'Article',
+      },
     },
   },
 }
