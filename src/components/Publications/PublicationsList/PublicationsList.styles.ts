@@ -15,6 +15,10 @@ export const Container = styled.section`
   @media (max-width: 912px) {
     padding: 60px 7%;
   }
+
+  @media (max-width: 768px) {
+    gap: 30px;
+  }
 `
 
 export const Header = styled.div`
