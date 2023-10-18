@@ -7,7 +7,7 @@ export const Container = styled.section`
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 125px 0 40px;
+  padding: 125px 30px 40px;
   background: #e4e4e4;
 
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1),
@@ -27,11 +27,11 @@ export const Title = styled.h1`
   font-size: ${styles.fontSizes.xl};
   font-weight: ${styles.fontWeights.bold};
   color: ${styles.colors.secondary};
-  text-transform: uppercase;
 `
 
 export const Description = styled.p`
   font-size: ${styles.fontSizes.lg};
   font-weight: ${styles.fontWeights.medium};
   color: ${styles.colors.darkGray};
+  text-align: center;
 `
