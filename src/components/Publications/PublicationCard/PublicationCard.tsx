@@ -1,7 +1,7 @@
 import React from 'react'
 
 import LinkIcon from '@/assets/green-link-icon.svg'
-import FallbackImage from './assets/document-icon.png'
+import FallbackImage from './assets/fallback-image.jpg'
 
 import * as S from './PublicationCard.styles'
 

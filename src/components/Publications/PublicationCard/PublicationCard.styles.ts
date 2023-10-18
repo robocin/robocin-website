@@ -17,13 +17,14 @@ export const Container = styled.div`
 
   border-radius: 24px;
   border: 2px solid ${styles.colors.secondary};
+  border-left: none;
   box-shadow: 10px 0 ${styles.colors.secondary};
 
   background-color: white;
 
-  @media (max-width: 524px) {
+  @media (max-width: 768px) {
+    border-left: 2px solid ${styles.colors.secondary};
     height: fit-content;
-    flex-direction: column;
   }
 `
 
@@ -37,12 +38,10 @@ export const PublicationImg = styled.div<PublicationImageProps>`
   background-repeat: no-repeat;
   background-position: center;
 
-  border-radius: 24px;
+  border-radius: 20px;
 
-  @media (max-width: 524px) {
-    width: 100%;
-    height: 250px;
-    flex-direction: column;
+  @media (max-width: 768px) {
+    display: none;
   }
 `
 
