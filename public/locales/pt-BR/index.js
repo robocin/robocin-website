@@ -112,7 +112,11 @@ const ptBR = {
     },
     team_description_papers: {
       title: 'Team Description Papers',
-      description: `Descrição da seção`,
+      description: `Organizamos por ano as visões gerais dos nossos Team 
+      Description Papers, os documentos responsáveis por agrupar informações 
+      e explicações acerca dos nossos designs.  Confira o conteúdo dos artigos 
+      clicando em seus títulos!`,
+      button_label: `Ver documentos`,
     },
     publication_card: {
       url_label: 'Artigo',

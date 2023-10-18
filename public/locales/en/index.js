@@ -111,7 +111,10 @@ const en = {
     },
     team_description_papers: {
       title: 'Team Description Papers',
-      description: `Section Description`,
+      description: `We organize overviews of our Team Description Papers each 
+      year, documents that group information and explanations about our designs. 
+      Check out the content of the articles by clicking on their titles!`,
+      button_label: `See documents`,
     },
     publications_list: {
       header: {

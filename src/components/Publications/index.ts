@@ -1,4 +1,5 @@
 import Header from './Header'
 import PublicationsList from './PublicationsList'
+import TDPSection from './TDPSection'
 
-export { Header, PublicationsList }
+export { Header, TDPSection, PublicationsList }
