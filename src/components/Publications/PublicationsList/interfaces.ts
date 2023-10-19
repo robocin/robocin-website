@@ -23,6 +23,9 @@ interface Translate {
   publication_card: {
     url_label: string
   }
+  filter_results: {
+    fallback: string
+  }
 }
 
 export interface PublicationsListDefaultProps {

@@ -36,9 +36,7 @@ const PublicationsList = ({
         </S.Select>
       </S.Header>
       {publications?.length === 0 ? (
-        <S.RegularText>
-          Oops! Parece que não temos publicações para esse ano.
-        </S.RegularText>
+        <S.RegularText>{translate.filter_results.fallback}</S.RegularText>
       ) : (
         publications?.map((publication) => (
           <PublicationCard

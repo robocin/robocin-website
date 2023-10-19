@@ -128,6 +128,9 @@ const en = {
       publication_card: {
         url_label: 'Article',
       },
+      filter_results: {
+        fallback: 'Oops! No publications were found for this year.',
+      },
     },
   },
 }

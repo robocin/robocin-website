@@ -133,6 +133,9 @@ const ptBR = {
       publication_card: {
         url_label: 'Artigo',
       },
+      filter_results: {
+        fallback: 'Oops! Nenhuma publicação foi encontrada para esse ano.',
+      },
     },
   },
 }
