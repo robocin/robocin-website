@@ -7,6 +7,7 @@ export const PageWrap = styled.main`
 
 export const ContentWrap = styled.div`
   padding-bottom: 212px;
+
   @media (max-width: 728px) {
     padding-bottom: 300px;
   }
