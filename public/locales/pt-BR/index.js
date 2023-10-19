@@ -183,6 +183,40 @@ const ptBR = {
       },
     },
   },
+  publications_page: {
+    header: {
+      title: 'Publicações',
+      description:
+        'Veja nossos Team Description Papers e nossas pesquisas abaixo',
+    },
+    team_description_papers: {
+      title: 'Team Description Papers',
+      description: `Organizamos por ano as visões gerais dos nossos Team 
+      Description Papers, os documentos responsáveis por agrupar informações 
+      e explicações acerca dos nossos designs.  Confira o conteúdo dos artigos 
+      clicando em seus títulos!`,
+      button_label: `Ver documentos`,
+    },
+    publication_card: {
+      url_label: 'Artigo',
+    },
+    publications_list: {
+      header: {
+        title: 'Nossas Publicações',
+        description: 'Veja nossas publicações',
+      },
+      default_filter_options: {
+        all: 'Todas',
+        recent: 'Mais recentes',
+      },
+      publication_card: {
+        url_label: 'Artigo',
+      },
+      filter_results: {
+        fallback: 'Oops! Nenhuma publicação foi encontrada para esse ano.',
+      },
+    },
+  },
 }
 
 export default ptBR

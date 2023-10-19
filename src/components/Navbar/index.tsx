@@ -23,7 +23,7 @@ const Navbar = () => {
     },
     {
       label: t.navbar.options.papers,
-      link: '/papers',
+      link: '/publications',
     },
   ]
 

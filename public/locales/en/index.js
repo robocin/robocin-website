@@ -4,7 +4,7 @@ const en = {
       home: 'Home',
       categories: 'Categories',
       team: 'Team',
-      papers: 'Papers',
+      papers: 'Publications',
     },
   },
   footer: {
@@ -182,6 +182,35 @@ const en = {
       development: {
         title: 'Development',
         description: 'We develop the software and hardware of our robots',
+      },
+    },
+  },
+  publications_page: {
+    header: {
+      title: 'Publications',
+      description: 'Check out our Team Description Papers and research below',
+    },
+    team_description_papers: {
+      title: 'Team Description Papers',
+      description: `We organize overviews of our Team Description Papers each 
+      year, documents that group information and explanations about our designs. 
+      Check out the content of the articles by clicking on their titles!`,
+      button_label: `See documents`,
+    },
+    publications_list: {
+      header: {
+        title: 'Our Publications',
+        description: 'Check out out publications below',
+      },
+      default_filter_options: {
+        all: 'All',
+        recent: 'Most recent',
+      },
+      publication_card: {
+        url_label: 'Article',
+      },
+      filter_results: {
+        fallback: 'Oops! No publications were found for this year.',
       },
     },
   },
