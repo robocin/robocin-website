@@ -71,7 +71,7 @@ export const Description = styled.p`
 
 export const Button = styled.a`
   display: flex;
-  justify-content: center;
+  align-items: center;
   gap: 8px;
   width: fit-content;
   font-size: ${styles.fontSizes.md};
