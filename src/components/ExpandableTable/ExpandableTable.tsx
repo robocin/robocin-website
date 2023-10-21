@@ -21,7 +21,7 @@ const ExpandableTable = ({
         <p>{data?.label}</p>
       </S.TopBar>
       {isTableOpen && (
-        <S.Table>
+        <S.Table data-testid="table">
           <tbody>
             <tr>
               {data?.th?.map((cell: string, index) => (
