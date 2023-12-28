@@ -8,8 +8,8 @@ interface PublicationImageProps {
 }
 
 export const Container = styled.div`
-  width: 100%;
-  height: 350px;
+  width: 80%;
+  height: 200px;
 
   display: flex;
   justify-content: space-between;
@@ -23,14 +23,15 @@ export const Container = styled.div`
   background-color: white;
 
   @media (max-width: 768px) {
+    width: 100%;
     border-left: 2px solid ${styles.colors.secondary};
     height: fit-content;
   }
 `
 
 export const PublicationImg = styled.div<PublicationImageProps>`
-  width: 350px;
-  height: 350px;
+  width: 200px;
+  height: 200px;
   flex-shrink: 0;
 
   background-image: url(${({ src }) => (src.src ? src.src : src)});
@@ -58,9 +59,11 @@ export const ContentWrapper = styled.div`
 
 export const Title = styled.h1`
   max-width: 100%;
-  font-size: ${styles.fontSizes.lg};
+  font-size: ${styles.fontSizes.md};
   font-weight: ${styles.fontWeights.bold};
   color: ${styles.colors.primary};
+
+  flex-shrink: 0;
 
   overflow: hidden;
   white-space: nowrap;
@@ -68,9 +71,11 @@ export const Title = styled.h1`
 `
 
 export const Description = styled.p`
-  font-size: ${styles.fontSizes.md};
+  font-size: ${styles.fontSizes.sm};
   font-weight: ${styles.fontWeights.medium};
   color: ${styles.colors.darkGray};
+
+  flex-shrink: 0;
 
   text-align: justify;
 

@@ -54,6 +54,8 @@ export const Row = styled.div`
   gap: 32px;
   flex-wrap: wrap;
 
+  margin-top: -32px;
+
   @media (max-width: 768px) {
     width: 85%;
   }
