@@ -50,7 +50,7 @@ export const Description = styled.p`
   text-align: center;
 `
 
-export const GategorySmallCard = styled.a`
+export const GategorySmallCard = styled.div`
   width: 175px;
   height: 80px;
 
@@ -68,6 +68,8 @@ export const GategorySmallCard = styled.a`
   font-weight: ${styles.fontWeights.bold};
   text-align: center;
 
+  border: none;
+
   background: linear-gradient(
       281deg,
       rgba(48, 48, 48, 0.6),
@@ -80,6 +82,8 @@ export const GategorySmallCard = styled.a`
   &:hover {
     transform: scale(1.05);
   }
+
+  cursor: pointer;
 
   @media (max-width: 574px) {
     width: 100%;
