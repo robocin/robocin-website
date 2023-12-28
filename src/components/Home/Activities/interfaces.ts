@@ -13,7 +13,4 @@ export interface ActivitiesProps {
     activity_card_button: string
   }
   activities?: Activity[]
-  onClickActivity: (
-    activity: 'competitions' | 'research' | 'development'
-  ) => void
 }
