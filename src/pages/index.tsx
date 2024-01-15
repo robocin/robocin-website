@@ -13,7 +13,8 @@ export default function Home() {
   return (
     <S.PageWrap>
       <S.ContentWrap>
-        <Banner translate={t.home.banner} />
+        <Banner />
+        {/* <Banner translate={t.home.banner} /> */}
         <AboutUs translate={t.home.about_us} />
         <Activities translate={t.home.activities} />
         <Sponsors translate={t.home.sponsors} />
