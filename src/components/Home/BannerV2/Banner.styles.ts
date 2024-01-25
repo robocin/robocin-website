@@ -13,12 +13,17 @@ export const SectionContainer = styled.section`
 
 export const TextContainer = styled.div`
   width: 100vw;
+  padding: 10vw;
   position: absolute;
   text-align: center;
   margin: auto;
   padding: auto;
   color: white;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.8);
+
+  @media (max-width: 768px) {
+    padding: 0;
+  }
 `
 
 export const BannerImg = styled(Image)`

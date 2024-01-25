@@ -104,6 +104,7 @@ const en = {
         largest robotics competition"`,
         complement: `Read more at:`,
       },
+      heading: 'Award-winning AI and Robotics Research',
       achievements: [
         {
           title: 'Small Size League World Champions',
