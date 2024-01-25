@@ -102,6 +102,7 @@ const ptBR = {
         robótica do mundo"`,
         complement: 'Leia mais em:',
       },
+      heading: 'Pesquisa de IA e Robótica premiada internacionalmente',
       achievements: [
         {
           title: 'Campeões Mundiais em SSL',
