@@ -8,16 +8,11 @@ export const Container = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 60px;
-
   padding: 60px 14%;
+  gap: 30px;
 
   @media (max-width: 912px) {
     padding: 60px 7%;
-  }
-
-  @media (max-width: 768px) {
-    gap: 30px;
   }
 `
 

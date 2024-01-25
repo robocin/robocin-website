@@ -4,4 +4,5 @@ export interface CategoriesHeaderProps {
     description: string
     categories: string[]
   }
+  scrollToSection: (sectionId: string) => void
 }

@@ -7,11 +7,7 @@ import * as S from './Activities.styles'
 
 import { ActivitiesProps } from './interfaces'
 
-const Actitivies = ({
-  translate,
-  activities,
-  onClickActivity,
-}: ActivitiesProps) => {
+const Actitivies = ({ translate, activities }: ActivitiesProps) => {
   return (
     <S.Container aria-label="Activities">
       {activities &&
@@ -20,9 +16,6 @@ const Actitivies = ({
             <S.ActivityImage src={activity.image} alt="Activity Icon" />
             <S.Title>{activity.title}</S.Title>
             <S.Description>{activity.description}</S.Description>
-            <S.Button onClick={() => onClickActivity(activity.id)}>
-              {translate?.activity_card_button}
-            </S.Button>
           </S.ActivityCard>
         ))}
       <S.BackgroundImage

@@ -8,7 +8,7 @@ import Main from './Actitivies'
 
 import { ActivitiesProps } from './interfaces'
 
-const Activities = ({ translate, onClickActivity }: ActivitiesProps) => {
+const Activities = ({ translate }: ActivitiesProps) => {
   const activitiesMap = [
     {
       image: TrophyIcon,
@@ -30,13 +30,7 @@ const Activities = ({ translate, onClickActivity }: ActivitiesProps) => {
     },
   ]
 
-  return (
-    <Main
-      translate={translate}
-      activities={activitiesMap}
-      onClickActivity={onClickActivity}
-    />
-  )
+  return <Main translate={translate} activities={activitiesMap} />
 }
 
 export default Activities
