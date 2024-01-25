@@ -14,7 +14,6 @@ export default function Home() {
     <S.PageWrap>
       <S.ContentWrap>
         <Banner />
-        {/* <Banner translate={t.home.banner} /> */}
         <AboutUs translate={t.home.about_us} />
         <Activities translate={t.home.activities} />
         <Sponsors translate={t.home.sponsors} />
