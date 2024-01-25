@@ -19,7 +19,7 @@ const Navbar = ({
   onPressMenu,
 }: NavbarProps) => (
   <S.Container>
-    <Image src={LogoWithLabel} alt="logo" priority />
+    <Image src={LogoWithLabel} alt="logo" priority height={60} />
     <S.NavOptions>
       {navOptions?.map((option, index) => (
         <S.StyledLink

@@ -1,4 +1,4 @@
-import LogoWithLabel from './logoWithLabel.png'
+import LogoWithLabel from './logo-with-label.png'
 import LogoWithLabelBright from './logoWithLabelBright.svg'
 import MenuIcon from './menuIcon.svg'
 import CloseIcon from './closeIcon.svg'
