@@ -1,5 +1,4 @@
 {
-  "plugins": ["@typescript-eslint"],
   "extends": [
     "next/core-web-vitals",
     "plugin:@typescript-eslint/recommended",
@@ -8,5 +7,9 @@
   "rules": {
     "prefer-const": "error",
     "@typescript-eslint/no-explicit-any": "error"
+  },
+  "plugins": ["@typescript-eslint"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
   }
 }
