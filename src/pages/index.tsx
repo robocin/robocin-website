@@ -1,11 +1,10 @@
-import React, { useState } from 'react'
-import { useRouter } from 'next/router'
+import React from 'react'
 
 import useTranslation from '@/hooks/useTranslation'
 
 import { Footer, Activities, AboutUs, Sponsors, Banner } from '@/components'
 
-import * as S from './home.styles'
+import * as S from '../styles/home.styles'
 
 export default function Home() {
   const t = useTranslation()

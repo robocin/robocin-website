@@ -1,7 +1,6 @@
 import React from 'react'
 
 import * as Brand from './assets'
-import { Mail } from './assets'
 
 import { SponsorsProps } from './interfaces'
 

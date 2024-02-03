@@ -7,7 +7,7 @@ import mockPublications from '@/components/Publications/PublicationsList/utils/m
 import { Header, TDPSection, PublicationsList } from '@/components/Publications'
 import { Footer } from '@/components'
 
-import { PageWrap, ContentWrap } from '../pages.styles'
+import { PageWrap, ContentWrap } from '../../styles/pages.styles'
 
 const PublicationsPage = () => {
   const t = useTranslation()

@@ -4,7 +4,7 @@ import useTranslation from '@/hooks/useTranslation'
 
 import { Footer } from '@/components'
 
-import { PageWrap, ContentWrap } from '../pages.styles'
+import { PageWrap, ContentWrap } from '../../styles/pages.styles'
 
 import { CategoriesHeader, Categories } from '@/components/CategoriesPage'
 

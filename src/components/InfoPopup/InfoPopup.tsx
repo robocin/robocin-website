@@ -2,8 +2,6 @@ import React from 'react'
 
 import { LeftArrow } from './assets'
 
-import typeImageMap from './utils/typeImageMap'
-
 import { InfoPopupProps } from './interfaces'
 
 import * as S from './InfoPopup.styles'

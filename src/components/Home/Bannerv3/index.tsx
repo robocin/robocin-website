@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { StyledBanner, StyledImage, StyledContent } from './style'
 import { Robot } from '@/assets'
 

@@ -15,7 +15,7 @@ const CategoriesHeader = ({
       <S.Row>
         {translate.categories.map((name) => (
           <S.GategorySmallCard
-            onClick={() => scrollToSection(name.toLowerCase())}
+            onClick={() => scrollToSection?.(name.toLowerCase())}
             key={name}
           >
             {name}
