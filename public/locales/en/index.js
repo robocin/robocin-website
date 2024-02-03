@@ -47,9 +47,9 @@ const en = {
       {
         title: 'Very Small Size League',
         competitions: 'LARC | IronCup',
-        description: `The Very Small Size Soccer (VSSS) competition 
+        description: `The Very Small Size Soccer (VSS) competition 
         is a multifaceted challenge that necessitates excellence in 
-        key domains within RoboCIn. This includes advanced computer 
+        key domains within RobôCIn. This includes advanced computer 
         vision techniques for extracting critical game-related 
         information, the deployment of artificial intelligence 
         algorithms to orchestrate precise movements for scoring 
@@ -91,18 +91,76 @@ const en = {
       {
         title: 'Drone',
         competitions: 'LARC',
-        description: 'Description of Drone',
+        description: `RobôCIn's drone category was designed for the 
+        development of autonomous flying robots and related technologies.  
+        To validate our work, we seek to participate in competitions and 
+        symposiums, mainly LARC and RoboCup Brazil.  In it we participated in the 
+        Flying Robots Trial League.  In this competition there are four 
+        challenges that the robot must be able to perform autonomously, 
+        generally involving reading and detecting objects, searching and 
+        moving between platforms and transporting loads.`,
         table_header: 'Drone - Results',
       },
     ],
+    resultsTables: {
+      vssl: {
+        label: 'VSSL - Results',
+        th: ['Year', 'LARC', 'IRONCup'],
+        trs: [
+          ['2021', '1º 3v3 RL', '1º'],
+          ['2020', '4º DET, 5º RL', '3º RL, 5º DET'],
+          ['2019', '4º DET, 5º RL', '3º RL'],
+          ['2018', '3º', '3º'],
+          ['2017', '5º', 'N/A'],
+          ['2016', '16º', 'N/A'],
+        ],
+      },
+      ssl: {
+        label: 'SSL - Results',
+        th: ['Year', 'LARC', 'Robocup'],
+        trs: [
+          [
+            '2023',
+            'N/A',
+            '1st Div B, 1st Ball Placement Technical Challenge, 5th Chip Pass Challenge',
+          ],
+          [
+            '2022',
+            '1st',
+            '1st Div B, 1st Ball Placement Technical Challenge, 2nd Vision Blackout, 3rd Dribbling Challenge',
+          ],
+          [
+            '2021',
+            '1st',
+            '3rd Div A/B, 1st Ball Placement Technical Challenge, 5th Hardware Challenge',
+          ],
+          ['2020', '1st', 'Postponed'],
+          ['2019', '5th', '3rd/4th Div B'],
+          ['2018', '5th', 'N/A'],
+        ],
+      },
+      simulation: {
+        label: '2D Simulation - Results',
+        th: ['Year', 'RoboCup', 'LARC', 'IRONCup'],
+        trs: [
+          ['2023', '6h', 'N/A', '2nd'],
+          ['2022', '10th', '1st', '3rd'],
+          ['2021', '7th', '1st', '3rd'],
+          ['2020', 'Postponed', '3rd', '6th'],
+          ['2019', '9th', '2nd', 'N/A'],
+          ['2018', 'N/A', '4th', '6th'],
+        ],
+      },
+    },
   },
   content: 'This content is in English',
   home: {
     banner: {
       headline: {
-        title: `"Brazilian team wins second title in the world's 
-        largest robotics competition"`,
-        complement: `Read more at:`,
+        title: `excellence in Research and Development 
+        in Robotics and Artificial Intelligence.`,
+        complement: `Our Artifical Intelligence, Computer Vision
+        and engineering are world-wide champions.`,
       },
       heading: 'Award-winning AI and Robotics Research',
       achievements: [
@@ -200,15 +258,15 @@ const en = {
     },
     publications_list: {
       header: {
-        title: 'Our Publications',
-        description: 'Check out out publications below',
+        title: 'Our Papers',
+        description: 'Check out out description papers below',
       },
       default_filter_options: {
         all: 'All',
         recent: 'Most recent',
       },
       publication_card: {
-        url_label: 'Article',
+        url_label: 'Paper',
       },
       filter_results: {
         fallback: 'Oops! No publications were found for this year.',
