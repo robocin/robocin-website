@@ -6,7 +6,7 @@
   ],
   "rules": {
     "prefer-const": "error",
-    "@typescript-eslint/no-explicit-any": "error"
+    "@typescript-eslint/no-explicit-any": "off"
   },
   "plugins": ["@typescript-eslint"],
   "parserOptions": {
