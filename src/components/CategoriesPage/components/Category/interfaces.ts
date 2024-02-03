@@ -9,4 +9,5 @@ export interface CategoryDefaultProps {
   competitions: string
   description: string
   approaches?: Approach[]
+  tables?: any[]
 }

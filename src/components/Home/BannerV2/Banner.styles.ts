@@ -19,7 +19,7 @@ export const TextContainer = styled.div`
   margin: auto;
   padding: auto;
   color: white;
-  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.8);
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 
   @media (max-width: 768px) {
     padding: 0;

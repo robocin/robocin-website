@@ -6,7 +6,7 @@ import InfoPopup from './InfoPopup'
 import Activities from './Home/Activities'
 import AboutUs from './Home/AboutUs'
 import Sponsors from './Home/Sponsors'
-import Banner from './Home/BannerV2'
+import Banner from './Home/Bannerv3'
 
 export {
   Navbar,

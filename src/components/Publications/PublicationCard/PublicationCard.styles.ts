@@ -52,7 +52,7 @@ export const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 24px;
+  gap: 16px;
   padding: 36px;
   overflow: hidden;
 `
@@ -81,10 +81,14 @@ export const Description = styled.p`
 
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 5;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 
   margin-bottom: auto;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-wrap: nowrap;
 `
 
 export const LinkWrapper = styled.a`
@@ -99,6 +103,8 @@ export const LinkIcon = styled(Image)`
 `
 
 export const LinkLabel = styled(Title)`
+  margin-left: 8px;
+  font-size: 1.2rem;
   text-transform: uppercase;
   text-decoration: underline;
 `
