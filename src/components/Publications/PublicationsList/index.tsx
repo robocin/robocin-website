@@ -47,7 +47,7 @@ PublicationsListDefaultProps) => {
       ...yearFilterOptions,
     ]
     return options
-  }, [translate.default_filter_options.all])
+  }, [translate.default_filter_options.all, yearFilterOptions])
 
   const handleChangeFilter = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const { value: filterValue } = e.target

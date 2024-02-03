@@ -1,7 +1,5 @@
 import React from 'react'
 
-import { useRouter } from 'next/router'
-
 import useTranslation from '@/hooks/useTranslation'
 
 import { Facebook, Github, Instagram, LinkedIn, Youtube } from './assets'
@@ -9,9 +7,6 @@ import { Facebook, Github, Instagram, LinkedIn, Youtube } from './assets'
 import Main from './Footer'
 
 const Footer = () => {
-  const router = useRouter()
-  const { locale } = router
-
   const t = useTranslation()
 
   const socialMediaMap = [

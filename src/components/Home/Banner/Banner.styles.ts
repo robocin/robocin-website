@@ -5,7 +5,6 @@ import Slider from 'react-slick'
 import styles from '@/styles/styles'
 
 import { RoboCup2023 } from '@/assets'
-import BanerImage from './assets/banner-img.jpg'
 
 export const Row = styled.div`
   display: flex;

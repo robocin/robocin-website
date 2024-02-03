@@ -10,13 +10,12 @@ import { CategoryDefaultProps } from './interfaces'
 import * as S from './Category.styles'
 
 type ResultTableKey = 'vssl' | 'ssl' | 'simulation' | 'drone'
-type localeType = 'en' | 'pt-BR'
 
 const titleMap: Record<string, ResultTableKey> = {
   'Small Size League': 'ssl',
   'Very Small Size League': 'vssl',
   '2D Simulation': 'simulation',
-  'Drone': 'drone',
+  Drone: 'drone',
 }
 
 const Category = ({

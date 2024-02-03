@@ -38,8 +38,9 @@ const PublicationsList = ({
       {publications?.length === 0 ? (
         <S.RegularText>{translate.filter_results.fallback}</S.RegularText>
       ) : (
-        publications?.map((publication) => (
+        publications?.map((publication, index) => (
           <PublicationCard
+            key={`${publication.url}-${index}`}
             translate={translate.publication_card}
             title={publication.title}
             description={publication.description}

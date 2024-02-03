@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import { useRouter } from 'next/router'
+import React from 'react'
 
 import useTranslation from '@/hooks/useTranslation'
 

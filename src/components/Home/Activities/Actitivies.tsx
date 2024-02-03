@@ -7,7 +7,7 @@ import * as S from './Activities.styles'
 
 import { ActivitiesProps } from './interfaces'
 
-const Actitivies = ({ translate, activities }: ActivitiesProps) => {
+const Actitivies = ({ activities }: ActivitiesProps) => {
   return (
     <S.Container aria-label="Activities">
       {activities &&
