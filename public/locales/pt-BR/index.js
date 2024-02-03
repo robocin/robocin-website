@@ -46,7 +46,7 @@ const ptBR = {
       {
         title: 'Very Small Size League',
         competitions: 'LARC | IronCup',
-        description: `Very Small Size Soccer (VSSS) é uma competição 
+        description: `Very Small Size Soccer (VSS) é uma competição 
         que requer desenvolvimento nas principais áreas do RobôCIn, 
         visão computacional para detectar informações sobre a situação 
         do jogo; inteligência artificial para planejar todos os 
@@ -89,18 +89,88 @@ const ptBR = {
       {
         title: 'Drone',
         competitions: 'LARC',
-        description: `Descrição de participação na categoria "drone".`,
+        description: `A categoria de drones do RobôCIn foi projetada para o 
+        desenvolvimento de robôs voadores autônomos e tecnologias relacionadas. 
+        Para validar nosso trabalho, buscamos participar de competições e simpósios, 
+        principalmente a LARC e a Robocup Brasil. Nela, participamos da Flying Robots Trial 
+        League. Nessa competição, existem quatro desafios que o robô deve 
+        ser capaz de realizar autonomamente, geralmente envolvendo a leitura e 
+        detecção de objetos, a busca e movimentação entre plataformas e o transporte 
+        de cargas.`,
         table_header: 'Drone - Resultados',
       },
     ],
+    resultsTables: {
+      vssl: {
+        label: 'VSSL - Resultados',
+        th: ['Ano', 'LARC', 'IRONCup'],
+        trs: [
+          ['2021', '1º 3v3 RL', '1º'],
+          ['2020', '4º DET, 5º RL', '3º RL, 5º DET'],
+          ['2019', '4º DET, 5º RL', '3º RL'],
+          ['2018', '3º', '3º'],
+          ['2017', '5º', 'N/A'],
+          ['2016', '16º', 'N/A'],
+        ],
+      },
+      ssl: {
+        label: 'SSL - Resultados',
+        th: ['Ano', 'LARC', 'Robocup'],
+        trs: [
+          [
+            '2023',
+            'N/A',
+            '1º Divisão B, 1º Ball Placement Technical Challenge, 5º Desafio de Chip Pass',
+          ],
+          [
+            '2022',
+            '1º',
+            '1º Divisão B, 1º Ball Placement Technical Challenge, 2º Vision Blackout, 3º Dribbling Challenge',
+          ],
+          [
+            '2021',
+            '1º',
+            '3º Divisão A/B, 1º Technical Challenge de Ball Placement, 5º Desafio de Hardware',
+          ],
+          ['2020', '1º', 'Adiado'],
+          ['2019', '5º', '3º/4º Divisão B'],
+          ['2018', '5º', 'N/A'],
+        ],
+      },
+      simulation: {
+        label: 'Simulação 2D - Resultados',
+        th: ['Ano', 'RoboCup', 'LARC', 'IRONCup'],
+        trs: [
+          ['2023', '6º', 'N/A', '2º'],
+          ['2022', '10º', '1º', '3º'],
+          ['2021', '7º', '1º', '3º'],
+          ['2020', 'Adiado', '3º', '6º'],
+          ['2019', '9º', '2º', 'N/A'],
+          ['2018', 'N/A', '4º', '6º'],
+        ],
+      },
+      drone: {
+        label: 'Drones - Resultados',
+        th: ['Ano', 'Robocup'],
+        trs: [
+          [
+            '2023',
+            '2º no Technical Challenge da Flying Robots Trial League, 3º geral na Flying Robots Trial League',
+          ][
+            ('2022', '3º no Technical Challenge da Flying Robots Trial League')
+          ],
+        ],
+      },
+    },
   },
   content: 'Esse conteúdo está em português',
   home: {
     banner: {
       headline: {
-        title: `"Equipe da UFPE conquista o bicampeonato da maior competição de
-        robótica do mundo"`,
-        complement: 'Leia mais em:',
+        title: `excelência em Pesquisa e Desenvolvimento 
+        em Robótica e Inteligência Artificial.`,
+        complement: `Nossa Inteligência Artificial, Visão Computacional e 
+        engenharia vencem campeonatos mundiais.`,
       },
       heading: 'Pesquisa de IA e Robótica premiada internacionalmente',
       achievements: [
@@ -199,19 +269,19 @@ const ptBR = {
       button_label: `Ver documentos`,
     },
     publication_card: {
-      url_label: 'Artigo',
+      url_label: 'Paper',
     },
     publications_list: {
       header: {
-        title: 'Nossas Publicações',
-        description: 'Veja nossas publicações',
+        title: 'Papers',
+        description: 'Veja nossos Description Papers abaixo',
       },
       default_filter_options: {
-        all: 'Todas',
+        all: 'Todos',
         recent: 'Mais recentes',
       },
       publication_card: {
-        url_label: 'Artigo',
+        url_label: 'Paper',
       },
       filter_results: {
         fallback: 'Oops! Nenhuma publicação foi encontrada para esse ano.',

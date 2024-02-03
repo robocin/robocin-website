@@ -44,6 +44,8 @@ const Navbar = () => {
   }
 
   const handleMenu = () => {
+    console.log('menu')
+
     setOpenMenu((prev) => !prev)
   }
 

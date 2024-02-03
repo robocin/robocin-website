@@ -3,7 +3,7 @@ const nextConfig = {
   i18n: {
     // TODO: add domains (?)
     locales: ['en', 'pt-BR'],
-    defaultLocale: 'en',
+    defaultLocale: 'pt-BR',
   },
   reactStrictMode: true,
   compiler: {

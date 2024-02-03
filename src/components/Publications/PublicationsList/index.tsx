@@ -1,17 +1,27 @@
-import React, { useState, useMemo } from 'react'
+import React, { useState, useMemo, useEffect } from 'react'
+import publications from '@/data/publications'
 
 import Main from './PublicationsList'
 
 import { PublicationsListDefaultProps } from './interfaces'
+import { useRouter } from 'next/router'
 
 const PublicationsList = ({
   translate,
-  publications,
-}: PublicationsListDefaultProps) => {
-  const [filteredPublications, setFilteredPublications] = useState(publications)
+}: // publications,
+PublicationsListDefaultProps) => {
+  const router = useRouter()
+  const { locale } = router
+  const language = locale === 'en' ? 'en' : 'ptBR'
 
-  const currentDate = new Date()
-  const currentYear = currentDate.getFullYear()
+  const [lang, setLang] = useState(language)
+  const [filteredPublications, setFilteredPublications] = useState(
+    publications[lang]
+  )
+
+  // const currentDate = new Date()
+  // const currentYear = currentDate.getFullYear()
+  const currentYear = 2020
 
   const yearFilterOptions = useMemo(() => {
     const startYear = 2016
@@ -43,15 +53,23 @@ const PublicationsList = ({
     const { value: filterValue } = e.target
 
     if (filterValue === 'all') {
-      setFilteredPublications(publications)
+      setFilteredPublications(publications[lang])
       return
     }
 
-    const filteredData = publications.filter(
+    const filteredData = publications[lang].filter(
       (publication) => publication.year === filterValue
     )
     setFilteredPublications(filteredData)
   }
+
+  useEffect(() => {
+    setLang(locale === 'en' ? 'en' : 'ptBR')
+  }, [locale])
+
+  useEffect(() => {
+    setFilteredPublications(publications[lang])
+  }, [lang])
 
   return (
     <Main

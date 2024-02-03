@@ -9,6 +9,7 @@ const Menu = ({
   languages,
   router,
   locale,
+  onNavigate,
   onChangeLanguage,
 }: Omit<NavbarProps, 'isMenuOpen' | 'onPressMenu'>) => {
   return (
@@ -18,6 +19,7 @@ const Menu = ({
           key={index + option.label}
           href={option.link}
           active={router?.asPath === option.link ? 'true' : 'false'}
+          onClick={onNavigate}
         >
           {option.label}
         </S.MenuStyledLink>

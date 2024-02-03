@@ -44,10 +44,7 @@ const Sponsors = ({ translate }: SponsorsProps) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <S.Mail>
-            <S.MailIcon src={Mail} alt="Mail Icon" />
-            robocin@cin.ufpe.br
-          </S.Mail>
+          <S.Mail>📫 robocin@cin.ufpe.br</S.Mail>
         </a>
       </S.Column>
     </S.Container>

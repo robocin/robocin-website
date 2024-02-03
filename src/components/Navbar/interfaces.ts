@@ -17,5 +17,6 @@ export interface NavbarProps {
   locale?: string
   isMenuOpen?: boolean
   onChangeLanguage?: React.ChangeEventHandler<HTMLSelectElement>
+  onNavigate?: () => void
   onPressMenu?: () => void
 }

@@ -9,6 +9,7 @@ const Menu = ({
   languages,
   router,
   locale,
+  onNavigate,
   onChangeLanguage,
 }: Omit<NavbarProps, 'isMenuOpen' | 'onPressMenu'>) => {
   return (
@@ -17,6 +18,7 @@ const Menu = ({
       languages={languages}
       router={router}
       locale={locale}
+      onNavigate={onNavigate}
       onChangeLanguage={onChangeLanguage}
     />
   )

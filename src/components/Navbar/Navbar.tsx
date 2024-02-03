@@ -58,6 +58,7 @@ const Navbar = ({
         languages={languages}
         router={router}
         locale={locale}
+        onNavigate={onPressMenu}
         onChangeLanguage={onChangeLanguage}
         data-testid="menu"
       />
