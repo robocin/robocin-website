@@ -14,10 +14,10 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className={manrope.className}>
+    <main className={manrope.className}>
       <Navbar />
       {children}
-    </div>
+    </main>
   )
 }
 
