@@ -18,6 +18,8 @@ import TwoDimensionSim from './2d-sim.jpg'
 
 import RobotModel from './robot-model.jpg'
 
+import Lab from './robocin-lab-2.jpg'
+
 export {
   LogoWithLabel,
   LogoWithLabelBright,
@@ -33,4 +35,5 @@ export {
   TwoDimensionSim,
   RobotModel,
   AltGroupPhoto,
+  Lab,
 }

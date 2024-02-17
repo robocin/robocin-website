@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { AltGroupPhoto, OpenInNewIcon } from '@/assets'
+import { Lab, OpenInNewIcon } from '@/assets'
 
 import * as S from './TDPSection.styles'
 
@@ -10,7 +10,7 @@ const TDPSection = ({ translate, tdpsUrl }: TDPSectionProps) => {
   return (
     <>
       <S.Container>
-        <S.Picture src={AltGroupPhoto} alt="Group" priority />
+        <S.Picture src={Lab} alt="Group" priority />
         <S.Content>
           <S.Title>{translate.title}</S.Title>
           <S.Description>{translate.description}</S.Description>
