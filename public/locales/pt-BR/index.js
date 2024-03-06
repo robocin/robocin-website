@@ -281,7 +281,7 @@ const ptBR = {
         recent: 'Mais recentes',
       },
       publication_card: {
-        url_label: 'Paper',
+        url_label: 'Leia',
       },
       filter_results: {
         fallback: 'Oops! Nenhuma publicação foi encontrada para esse ano.',

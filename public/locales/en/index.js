@@ -266,7 +266,7 @@ const en = {
         recent: 'Most recent',
       },
       publication_card: {
-        url_label: 'Paper',
+        url_label: 'Read',
       },
       filter_results: {
         fallback: 'Oops! No publications were found for this year.',

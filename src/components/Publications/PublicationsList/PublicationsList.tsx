@@ -1,6 +1,6 @@
 import React from 'react'
 
-import PublicationCard from '../PublicationCard'
+import PublicationCard from '../PublicationCardV2'
 
 import * as S from './PublicationsList.styles'
 
@@ -41,11 +41,8 @@ const PublicationsList = ({
         publications?.map((publication, index) => (
           <PublicationCard
             key={`${publication.url}-${index}`}
+            publication={publication}
             translate={translate.publication_card}
-            title={publication.title}
-            description={publication.description}
-            image={publication?.image}
-            url={publication.url}
           />
         ))
       )}
