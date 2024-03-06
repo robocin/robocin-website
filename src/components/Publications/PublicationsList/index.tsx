@@ -1,34 +1,28 @@
 import React, { useState, useMemo, useEffect } from 'react'
-import publications from '@/data/publications'
+import { scientificPublications } from '@/data/publications'
 
 import Main from './PublicationsList'
 
 import { PublicationsListDefaultProps } from './interfaces'
 import { useRouter } from 'next/router'
 
-const PublicationsList = ({
-  translate,
-}: // publications,
-PublicationsListDefaultProps) => {
+const PublicationsList = ({ translate }: PublicationsListDefaultProps) => {
   const router = useRouter()
   const { locale } = router
   const language = locale === 'en' ? 'en' : 'ptBR'
 
   const [lang, setLang] = useState(language)
   const [filteredPublications, setFilteredPublications] = useState(
-    publications[lang]
+    scientificPublications
   )
 
-  // const currentDate = new Date()
-  // const currentYear = currentDate.getFullYear()
-  const currentYear = 2020
-
   const yearFilterOptions = useMemo(() => {
-    const startYear = 2016
-    const yearOptionsRange = Array(currentYear - startYear + 1)
+    const initialYear = 2020
+    const finalYear = 2023
+    const yearOptionsRange = Array(finalYear - initialYear + 1)
       .fill(undefined)
       .map((_, index) => {
-        const year = currentYear - index
+        const year = finalYear - index
         return {
           label: year.toString(),
           value: year.toString(),
@@ -53,11 +47,11 @@ PublicationsListDefaultProps) => {
     const { value: filterValue } = e.target
 
     if (filterValue === 'all') {
-      setFilteredPublications(publications[lang])
+      setFilteredPublications(scientificPublications)
       return
     }
 
-    const filteredData = publications[lang].filter(
+    const filteredData = scientificPublications.filter(
       (publication) => publication.year === filterValue
     )
     setFilteredPublications(filteredData)
@@ -68,7 +62,7 @@ PublicationsListDefaultProps) => {
   }, [locale])
 
   useEffect(() => {
-    setFilteredPublications(publications[lang])
+    setFilteredPublications(scientificPublications)
   }, [lang])
 
   return (
