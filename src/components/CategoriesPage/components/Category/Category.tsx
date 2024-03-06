@@ -13,7 +13,7 @@ type ResultTableKey = 'vssl' | 'ssl' | 'simulation' | 'drone'
 
 const titleMap: Record<string, ResultTableKey> = {
   'Small Size League': 'ssl',
-  'Very Small Size League': 'vssl',
+  'Very Small Size Soccer': 'vssl',
   '2D Simulation': 'simulation',
   Drone: 'drone',
 }

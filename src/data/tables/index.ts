@@ -1,9 +1,11 @@
 export const resultsTables = {
   en: {
     vssl: {
-      label: 'VSS - Results',
+      label: 'VSSS - Results',
       th: ['Year', 'LARC', 'IRONCup'],
       trs: [
+        ['2023', 'N/A', '2nd'],
+        ['2022', '1st', '3rd'],
         ['2021', '1º 3v3 RL', '1º'],
         ['2020', '4º DET, 5º RL', '3º RL, 5º DET'],
         ['2019', '4º DET, 5º RL', '3º RL'],
@@ -62,9 +64,11 @@ export const resultsTables = {
   },
   ptBR: {
     vssl: {
-      label: 'VSSL - Resultados',
+      label: 'VSSS - Resultados',
       th: ['Ano', 'LARC', 'IRONCup'],
       trs: [
+        ['2023', 'N/A', '2º'],
+        ['2022', '1º', '3º'],
         ['2021', '1º 3v3 RL', '1º'],
         ['2020', '4º DET, 5º RL', '3º RL, 5º DET'],
         ['2019', '4º DET, 5º RL', '3º RL'],
@@ -80,21 +84,21 @@ export const resultsTables = {
         [
           '2023',
           'N/A',
-          '1st Div B, 1st Desafio de Ball Placement, 5th Desafio de Chip Pass',
+          '1º Div B, 1º Desafio de Ball Placement, 5º Desafio de Chip Pass',
         ],
         [
           '2022',
-          '1st',
-          '1st Div B, 1st Desafio de Ball Placement, 2nd Vision Blackout, 3rd Desafio de Dribles',
+          '1º',
+          '1º Div B, 1º Desafio de Ball Placement, 2º Vision Blackout, 3º Desafio de Dribbling',
         ],
         [
           '2021',
-          '1st',
-          '3rd Div A/B, 1st Desafio de Ball Placement, 5th Desafio de Hardware',
+          '1º',
+          '3º Div A/B, 1º Desafio de Ball Placement, 5º Desafio de Hardware',
         ],
-        ['2020', '1st', 'Adiado'],
-        ['2019', '5th', '3rd/4th Div B'],
-        ['2018', '5th', 'N/A'],
+        ['2020', '1º', 'Adiado'],
+        ['2019', '5º', '3º/4º Div B'],
+        ['2018', '5º', 'N/A'],
       ],
     },
     simulation: {

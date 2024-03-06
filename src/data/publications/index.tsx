@@ -107,7 +107,7 @@ const publications: Publications = {
       title: 'LARC VSSS - Deep RobôCIn Team Description Paper',
       description: `This Team Description Paper (TDP) presents the proposal 
       developed by RoboCIn AI from the Center for Informatics at UFPE to 
-      participate in the IEEE Very Small Size Soccer (VSS) category. This 
+      participate in the IEEE Very Small Size Soccer (VSSS) category. This 
       TDP describes the modules used in the control and planning of the 
       robots' actions, as well as their mechanical and electronic specifications. 
       In this team, all decision-making processes of the robots have been 
@@ -194,7 +194,7 @@ const publications: Publications = {
       title: 'LARC VSSS - Deep RobôCIn Team Description Paper',
       description: `This Team Description Paper (TDP) presents the proposal 
       developed by RoboCIn AI from the Center for Informatics at UFPE to 
-      participate in the IEEE Very Small Size Soccer (VSS) category. This 
+      participate in the IEEE Very Small Size Soccer (VSSS) category. This 
       TDP describes the modules used in the control and planning of the 
       robots' actions, as well as their mechanical and electronic specifications.
        In this team, all decision-making processes of the robots have been 
@@ -367,7 +367,7 @@ const publications: Publications = {
       description: `Este Team Description Paper (TDP) aprensenta a
       proposta desenvolvida por RoboCIn IA do Centro de Informática
       da UFPE para participar na categoria IEEE Very Small Size
-      Soccer (VSS). Este TDP descreve os módulos utilizados no
+      Soccer (VSSS). Este TDP descreve os módulos utilizados no
       controle e planejamento das ações dos robôs, assim como suas
       especificações mecânicas e eletrônicas. Nesta equipe todas as
       tomadas de decisões dos robôs foram aprendidas através de
@@ -463,7 +463,7 @@ const publications: Publications = {
       description: `Este Team Description Paper (TDP) aprensenta a
       proposta desenvolvida por RoboCIn IA do Centro de Informática 
       da UFPE para participar na categoria IEEE Very Small
-      Size Soccer (VSS). Este TDP descreve os módulos utilizados
+      Size Soccer (VSSS). Este TDP descreve os módulos utilizados
       no controle e planejamento das ações dos robôs, assim como
       suas especificações mecânicas e eletrônicas. Nesta equipe todas
       as tomadas de decisões dos robôs foram aprendidas através

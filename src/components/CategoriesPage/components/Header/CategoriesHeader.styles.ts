@@ -64,7 +64,7 @@ export const GategorySmallCard = styled.div`
 
   color: white;
   text-transform: uppercase;
-  font-size: ${styles.fontSizes.md};
+  font-size: ${styles.fontSizes.sm};
   font-weight: ${styles.fontWeights.bold};
   text-align: center;
 

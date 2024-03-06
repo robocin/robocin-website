@@ -22,7 +22,7 @@ const en = {
       that compete in various categories, such as:`,
       categories: [
         'Small Size League',
-        'Very Small Size League',
+        'Very Small Size Soccer',
         '2D Simulation',
         'Drone',
       ],
@@ -45,9 +45,9 @@ const en = {
         table_header: 'Small Size League - Results',
       },
       {
-        title: 'Very Small Size League',
+        title: 'Very Small Size Soccer',
         competitions: 'LARC | IronCup',
-        description: `The Very Small Size Soccer (VSS) competition 
+        description: `The Very Small Size Soccer (VSSS) competition 
         is a multifaceted challenge that necessitates excellence in 
         key domains within RobôCIn. This includes advanced computer 
         vision techniques for extracting critical game-related 
@@ -74,7 +74,7 @@ const en = {
             executed by our players.`,
           },
         ],
-        table_header: 'Very Small Size League - Results',
+        table_header: 'Very Small Size Soccer - Results',
       },
       {
         title: '2D Simulation',
