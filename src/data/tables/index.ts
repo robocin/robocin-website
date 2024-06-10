@@ -4,7 +4,7 @@ export const resultsTables = {
       label: 'VSSS - Results',
       th: ['Year', 'LARC', 'IRONCup'],
       trs: [
-        ['2023', 'N/A', '2nd'],
+        ['2023', '2nd', '2nd'],
         ['2022', '1st', '3rd'],
         ['2021', '1º 3v3 RL', '1º'],
         ['2020', '4º DET, 5º RL', '3º RL, 5º DET'],
@@ -20,7 +20,7 @@ export const resultsTables = {
       trs: [
         [
           '2023',
-          'N/A',
+          '1st',
           '1st Div B, 1st Ball Placement Technical Challenge, 5th Chip Pass Challenge',
         ],
         [
@@ -42,7 +42,7 @@ export const resultsTables = {
       label: '2D Simulation - Results',
       th: ['Year', 'RoboCup', 'LARC', 'IRONCup'],
       trs: [
-        ['2023', '6h', 'N/A', '2nd'],
+        ['2023', '6th', '1st', '2nd'],
         ['2022', '10th', '1st', '3rd'],
         ['2021', '7th', '1st', '3rd'],
         ['2020', 'Postponed', '3rd', '6th'],
@@ -67,7 +67,7 @@ export const resultsTables = {
       label: 'VSSS - Resultados',
       th: ['Ano', 'LARC', 'IRONCup'],
       trs: [
-        ['2023', 'N/A', '2º'],
+        ['2023', '2º', '2º'],
         ['2022', '1º', '3º'],
         ['2021', '1º 3v3 RL', '1º'],
         ['2020', '4º DET, 5º RL', '3º RL, 5º DET'],
