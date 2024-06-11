@@ -39,7 +39,7 @@ const en = {
         An SSL match unfolds between two teams, each comprised of six 
         robots. These robots are constrained by specific dimensions; 
         they must fit within a 180 mm diameter circle and should not 
-        exceed 150 mm in size. Notably, our vision system, which processes 
+        exceed 150 mm in height. Notably, our vision system, which processes 
         data from four cameras, plays a crucial role in identifying and 
         normalizing all objects within the field.`,
         table_header: 'Small Size League - Results',
