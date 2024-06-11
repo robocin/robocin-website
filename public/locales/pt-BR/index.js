@@ -38,7 +38,7 @@ const ptBR = {
           Um jogo de SSL ocorre entre duas equipes de seis robôs 
           cada. Os robôs tem dimensões limitadas, o robô deve 
           caber dentro de um círculo de 180 mm de diâmetro e 
-          não deve ter mais de 15 cm. Todos os objetos no campo 
+          não deve ter mais de 150 mm de altura. Todos os objetos no campo 
           são identificados e normalizados pelos sistema de visão 
           que processa os dados proveniente pelas 4 cameras.`,
         table_header: 'Small Size League - Resultados',
@@ -141,7 +141,7 @@ const ptBR = {
         label: 'Simulação 2D - Resultados',
         th: ['Ano', 'RoboCup', 'LARC', 'IRONCup'],
         trs: [
-          ['2023', '6º', 'N/A', '2º'],
+          ['2023', '6º', '1º', '2º'],
           ['2022', '10º', '1º', '3º'],
           ['2021', '7º', '1º', '3º'],
           ['2020', 'Adiado', '3º', '6º'],

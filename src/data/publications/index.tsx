@@ -542,17 +542,13 @@ const publications: Publications = {
 }
 
 const scientificPublications = [
-  // Uncomment this when URL is found!
-  // {
-  //   title: `Improving Inertial Odometry through
-  //   Particle Swarm Optimization in the RoboCup Small
-  //   Size League`,
-  //   description: `Lucas Cavalcanti, João Guilherme Oliveira
-  //   Carvalho de Melo, Riei Joaquim and Edna
-  //   Barros`,
-  //   url: ``,
-  //   year: `2023`,
-  // },
+  {
+    title: `Improving Inertial Odometry Through Particle Swarm 
+      Optimization in the RoboCup Small Size League`,
+    description: `Lucas Cavalcanti, João G. Melo, Riei Joaquim & Edna Barros `,
+    url: `https://link.springer.com/chapter/10.1007/978-3-031-55015-7_8`,
+    year: `2023`,
+  },
   {
     title: `Dataset and Baseline Experiments for 
     Self-Localization and Tracking in the RoboCup 
@@ -593,6 +589,35 @@ const scientificPublications = [
     Edna NS Barros`,
     url: `https://link.springer.com/chapter/10.1007/978-3-031-28469-4_15`,
     year: `2022`,
+  },
+  {
+    title: `An Embedded Monocular Vision Approach for Ground-Aware 
+      Objects Detection and Position Estimation`,
+    description: `João G. Melo & Edna Barros`,
+    url: `https://link.springer.com/chapter/10.1007/978-3-031-28469-4_9`,
+    year: `2022`,
+  },
+  {
+    title: `A Telemetry-Based PI Tuning Strategy for Low-Level Control of an Omnidirectional Mobile Robot`,
+    description: `Victor Araújo, Felipe Martins, Roberto Fernandes & Edna Barros `,
+    url: `https://link.springer.com/chapter/10.1007/978-3-030-98682-7_16`,
+    year: `2021`,
+  },
+  {
+    title: `Dataset and Benchmarking of Real-Time Embedded 
+      Object Detection for RoboCup SSL`,
+    description: `Roberto Fernandes, Walber M. Rodrigues & Edna Barros`,
+    url: `https://link.springer.com/chapter/10.1007/978-3-030-98682-7_5`,
+    year: `2021`,
+  },
+  {
+    title: `rSoccer: A Framework for Studying Reinforcement 
+    Learning in Small and Very Small Size Robot Soccer`,
+    description: `Felipe B. Martins, Mateus G. Machado, 
+      Hansenclever F. Bassani, Pedro H. M. Braga & 
+      Edna S. Barros`,
+    url: `https://link.springer.com/chapter/10.1007/978-3-030-98682-7_14`,
+    year: `2021`,
   },
   {
     title: `Optimized Wireless Control and Telemetry 

@@ -44,7 +44,9 @@ const Category = ({
       </S.Wrapper>
       {approaches && (
         <>
-          <S.ApproachSectionTitle>Nossas abordagens</S.ApproachSectionTitle>
+          <S.ApproachSectionTitle>
+            {lang === 'en' ? 'Our Approaches' : 'Nossas abordagens'}
+          </S.ApproachSectionTitle>
           <S.Wrapper>
             {approaches.map((approach, index) => (
               <S.ApproachContainer
