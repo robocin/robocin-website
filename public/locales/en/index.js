@@ -39,7 +39,7 @@ const en = {
         An SSL match unfolds between two teams, each comprised of six 
         robots. These robots are constrained by specific dimensions; 
         they must fit within a 180 mm diameter circle and should not 
-        exceed 15 cm in size. Notably, our vision system, which processes 
+        exceed 150 mm in height. Notably, our vision system, which processes 
         data from four cameras, plays a crucial role in identifying and 
         normalizing all objects within the field.`,
         table_header: 'Small Size League - Results',
@@ -121,7 +121,7 @@ const en = {
         trs: [
           [
             '2023',
-            'N/A',
+            '1st',
             '1st Div B, 1st Ball Placement Technical Challenge, 5th Chip Pass Challenge',
           ],
           [
@@ -143,7 +143,7 @@ const en = {
         label: '2D Simulation - Results',
         th: ['Year', 'RoboCup', 'LARC', 'IRONCup'],
         trs: [
-          ['2023', '6h', 'N/A', '2nd'],
+          ['2023', '6th', '1st', '2nd'],
           ['2022', '10th', '1st', '3rd'],
           ['2021', '7th', '1st', '3rd'],
           ['2020', 'Postponed', '3rd', '6th'],
