@@ -8,6 +8,10 @@ import Itemm from './itemm-logo.png'
 import Microsoft from './microsoft_logo.png'
 import Moura from './moura-logo.png'
 import Neurotech from './neurotech-logo.png'
+import Tractian from './tractian-logo.png'
+import STMicroelectronics from './stmicroelectronics-logo.png'
+import TronControlesEletricos from './tron-controles-eletricos-logo.png'
+import Maxon from './maxon-logo.png'
 
 import BackgroundBlob from './sponsors-background.svg'
 import Lightbulb from './lightbulb.svg'
@@ -25,6 +29,10 @@ export {
   Microsoft,
   Moura,
   Neurotech,
+  Tractian,
+  STMicroelectronics,
+  TronControlesEletricos,
+  Maxon,
   BackgroundBlob,
   Lightbulb,
   Handshake,
