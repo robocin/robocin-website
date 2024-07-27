@@ -24,15 +24,30 @@ const Sponsors = ({ translate }: SponsorsProps) => {
           <S.Brand src={Brand.Ines} alt="INES logo" />
           <S.Brand src={Brand.Microsoft} alt="Microsoft logo" />
           <S.Brand src={Brand.Moura} alt="Moura logo" />
-          {/* <S.Brand
-            src={Brand.Itemm}
-            alt="Embraer logo"
-            style={{ width: '12%' }}
-          /> */}
           <S.Brand
             src={Brand.Neurotech}
             alt="Neurotech logo"
             style={{ width: '22%' }}
+          />
+          <S.Brand
+            src={Brand.Tractian}
+            alt="Tractian logo"
+            style={{ width: '22%' }}
+          />
+          <S.Brand
+            src={Brand.STMicroelectronics}
+            alt="STMicroelectronics logo"
+            style={{ width: '7.5%' }}
+          />
+          <S.Brand
+            src={Brand.TronControlesEletricos}
+            alt="STMicroelectronics logo"
+            style={{ width: '12%' }}
+          />
+          <S.Brand
+            src={Brand.Maxon}
+            alt="Maxon logo"
+            style={{ width: '12%' }}
           />
         </S.Row>
       </S.Column>
