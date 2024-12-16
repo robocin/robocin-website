@@ -5,6 +5,7 @@ const en = {
       categories: 'Categories',
       team: 'Team',
       papers: 'Publications',
+      recruitment: 'Recruitment',
     },
   },
   footer: {
@@ -190,6 +191,10 @@ const en = {
         },
       ],
     },
+    recruitment: {
+      recruiting: "We're recruiting new members!",
+      cta: 'Learn more',
+    },
     activities: {
       competitions_card: {
         title: 'Competitions',
@@ -272,6 +277,10 @@ const en = {
         fallback: 'Oops! No publications were found for this year.',
       },
     },
+  },
+  recruitment_page: {
+    header: "We're recruiting new members!",
+    cta: 'Apply now!',
   },
 }
 
