@@ -5,6 +5,7 @@ const ptBR = {
       categories: 'Categorias',
       team: 'Equipe',
       papers: 'Publicações',
+      recruitment: 'Seletiva',
     },
   },
   footer: {
@@ -200,6 +201,10 @@ const ptBR = {
         },
       ],
     },
+    recruitment: {
+      recruiting: 'Estamos selecionando novos membros!',
+      cta: 'Veja mais',
+    },
     activities: {
       competitions_card: {
         title: 'Competições',
@@ -287,6 +292,10 @@ const ptBR = {
         fallback: 'Oops! Nenhuma publicação foi encontrada para esse ano.',
       },
     },
+  },
+  recruitment_page: {
+    header: 'Estamos selecionando novos membros!',
+    cta: 'Candidate-se agora!',
   },
 }
 
