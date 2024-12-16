@@ -7,6 +7,7 @@ import Activities from './Home/Activities'
 import AboutUs from './Home/AboutUs'
 import Sponsors from './Home/Sponsors'
 import Banner from './Home/Bannerv3'
+import Recruitment from './Home/Recruitment'
 
 export {
   Navbar,
@@ -17,4 +18,5 @@ export {
   AboutUs,
   Sponsors,
   Banner,
+  Recruitment,
 }
