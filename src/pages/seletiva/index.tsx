@@ -22,7 +22,7 @@ const RecruitmentPage = () => {
             {t.recruitment_page.cta}
           </S.ApplicationLink>
           <Link
-            href="https://docs.google.com/document/d/115BpUTwgWnzGHVEu6PTAnJeanQ6NJ88kPDnwRgBbzD8/edit?usp=sharing"
+            href="https://drive.google.com/file/d/1oTGm5KmXLPwaJQtHD4PlIW8D-vxSwom1/view?usp=sharing"
             target="_blank"
             style={{ textDecoration: 'underline', fontSize: '16px' }}
           >
