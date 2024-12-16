@@ -4,7 +4,7 @@ import { Footer } from '@/components'
 
 import { PageWrap, ContentWrap } from '../../styles/pages.styles'
 
-import * as S from './styles'
+import * as S from '../../components/Recruitment/styles'
 import Link from 'next/link'
 
 const RecruitmentPage = () => {
