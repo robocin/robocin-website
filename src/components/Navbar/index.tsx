@@ -25,10 +25,10 @@ const Navbar = () => {
       label: t.navbar.options.papers,
       link: '/publications',
     },
-    {
-      label: t.navbar.options.recruitment,
-      link: '/seletiva',
-    },
+    // {
+    //   label: t.navbar.options.recruitment,
+    //   link: '/seletiva',
+    // },
   ]
 
   const languages = [
