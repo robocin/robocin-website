@@ -8,7 +8,7 @@ import {
   AboutUs,
   Sponsors,
   Banner,
-  Recruitment,
+  // Recruitment,
 } from '@/components'
 
 import * as S from '../styles/home.styles'
@@ -20,7 +20,7 @@ export default function Home() {
     <S.PageWrap>
       <S.ContentWrap>
         <Banner translate={t.home.banner.headline} />
-        <Recruitment />
+        {/* <Recruitment /> */}
         <AboutUs translate={t.home.about_us} />
         <Activities translate={t.home.activities} />
         <Sponsors translate={t.home.sponsors} />
