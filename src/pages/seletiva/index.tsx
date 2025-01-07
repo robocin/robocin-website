@@ -15,27 +15,18 @@ const RecruitmentPage = () => {
       <ContentWrap>
         <S.Container>
           <h1 style={{ textAlign: 'center' }}>{t.recruitment_page.header}</h1>
-          <S.ApplicationLink
-            href="https://docs.google.com/forms/d/1BzwpruRIOyFXa9feMs6U_ph1tqfy08fZUa0LVh2ugqg/closedform"
-            target="_blank"
-          >
-            {t.recruitment_page.cta}
-          </S.ApplicationLink>
           <Link
             href="https://drive.google.com/file/d/1oTGm5KmXLPwaJQtHD4PlIW8D-vxSwom1/view?usp=sharing"
             target="_blank"
-            style={{ textDecoration: 'underline', fontSize: '16px' }}
+            style={{
+              textDecoration: 'underline',
+              fontSize: '16px',
+              marginTop: 20,
+            }}
           >
             Confira o edital
           </Link>
-          <hr
-            style={{
-              margin: '40px 0',
-              color: 'gray',
-              width: '40%',
-            }}
-          />
-          <h2>Especificações de Projetos</h2>
+          <h2 style={{ marginTop: 40 }}>Especificações de Projetos</h2>
           <p>
             Confira abaixo as especificações de projetos do Processo Seletivo
             para cada área:
@@ -43,7 +34,7 @@ const RecruitmentPage = () => {
           <ul>
             <li>
               <Link
-                href="https://drive.google.com/file/d/18u-SlHCgqf31S1Zu1YZtmJKydh_ez_bq/view?usp=sharing"
+                href="https://drive.google.com/file/d/11vei4CAqlyGkLro0KCxppwjqNt0IDtYk/view?usp=sharing"
                 target="_blank"
               >
                 Comunicação 🔗
@@ -59,7 +50,7 @@ const RecruitmentPage = () => {
             </li>
             <li>
               <Link
-                href="https://drive.google.com/file/d/1FUNCN0reYr1BrJh5guCY_84bNptDoGRr/view?usp=sharing"
+                href="https://drive.google.com/file/d/1VdxkILRuBFpAiQ2fpxUvCFgk83--EQ2Q/view?usp=sharing"
                 target="_blank"
               >
                 Embarcados 🔗
@@ -75,15 +66,7 @@ const RecruitmentPage = () => {
             </li>
             <li>
               <Link
-                href="https://drive.google.com/file/d/1J5raMtmiQ-1UREYWnvzFVk0ZJ2GhPVhj/view?usp=sharing"
-                target="_blank"
-              >
-                Projeto de Software 🔗
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="https://drive.google.com/file/d/1LCSevq49_uubGuWWCmYjgzYpSi1r3bAk/view?usp=sharing"
+                href="https://drive.google.com/file/d/1iE-DD6R1qNwL9xN3ynY6s-WjqRvUNfvo/view?usp=sharing"
                 target="_blank"
               >
                 Software 🔗
