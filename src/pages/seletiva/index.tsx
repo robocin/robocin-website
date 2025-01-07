@@ -35,6 +35,68 @@ const RecruitmentPage = () => {
               width: '40%',
             }}
           />
+          <h2>Especificações de Projetos</h2>
+          <p>
+            Confira abaixo as especificações de projetos do Processo Seletivo
+            para cada área:
+          </p>
+          <ul>
+            <li>
+              <Link
+                href="https://drive.google.com/file/d/18u-SlHCgqf31S1Zu1YZtmJKydh_ez_bq/view?usp=sharing"
+                target="_blank"
+              >
+                Comunicação 🔗
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="https://drive.google.com/file/d/1PxG32ZxQrW2aoyZa-SWJZL_CT3l9Yczb/view?usp=sharing"
+                target="_blank"
+              >
+                Eletrônica 🔗
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="https://drive.google.com/file/d/1FUNCN0reYr1BrJh5guCY_84bNptDoGRr/view?usp=sharing"
+                target="_blank"
+              >
+                Embarcados 🔗
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="https://drive.google.com/file/d/1dIe3N6fHKCZLdkLDBwQlXe6drfQzus9z/view?usp=sharing"
+                target="_blank"
+              >
+                Mecânica 🔗
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="https://drive.google.com/file/d/1J5raMtmiQ-1UREYWnvzFVk0ZJ2GhPVhj/view?usp=sharing"
+                target="_blank"
+              >
+                Projeto de Software 🔗
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="https://drive.google.com/file/d/1LCSevq49_uubGuWWCmYjgzYpSi1r3bAk/view?usp=sharing"
+                target="_blank"
+              >
+                Software 🔗
+              </Link>
+            </li>
+          </ul>
+          <hr
+            style={{
+              margin: '40px 0',
+              color: 'gray',
+              width: '40%',
+            }}
+          />
           <h1>Perguntas Frequentes</h1>
           <S.FaqContainer>
             <div>
