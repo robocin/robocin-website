@@ -299,10 +299,11 @@ const ptBR = {
     cta: 'Candidate-se agora!',
   },
   blog_page: {
-    title: 'Blog de Engenharia',
-    description: 'Construindo robôs mais Capazes, Seguros e Inteligentes',
+    header: {
+      title: 'Blog de Engenharia',
+      description: 'Construindo robôs mais Capazes, Seguros e Inteligentes',
+    },
   },
-
 }
 
 export default ptBR

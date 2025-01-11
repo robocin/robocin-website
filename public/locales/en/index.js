@@ -280,8 +280,10 @@ const en = {
     },
   },
   blog_page: {
-    title: 'Engineering blog',
-    description: 'Building Smarter, Safer, and More Capable Robots',
+    header: {
+      title: 'Engineering blog',
+      description: 'Building Smarter, Safer, and More Capable Robots',
+    },
   },
   recruitment_page: {
     header: 'We\'re recruiting new members!',

@@ -33,7 +33,7 @@ const PublicationsPage = () => {
   return (
     <PageWrap>
       <ContentWrap>
-        <Header translate={t.publications_page.header} />
+        <Header translate={t.blog_page.header} />
         {/*<PublicationsList
           translate={t.publications_page.publications_list}
           publications={mockPublications}
