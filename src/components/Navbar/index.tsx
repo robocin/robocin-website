@@ -29,6 +29,10 @@ const Navbar = () => {
       label: t.navbar.options.recruitment,
       link: '/seletiva',
     },
+    {
+      label: t.navbar.options.blog,
+      link: '/blog',
+    },
   ]
 
   const languages = [

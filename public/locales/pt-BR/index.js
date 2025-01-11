@@ -6,6 +6,7 @@ const ptBR = {
       team: 'Equipe',
       papers: 'Publicações',
       recruitment: 'Seletiva',
+      blog: 'Blog',
     },
   },
   footer: {
@@ -158,7 +159,7 @@ const ptBR = {
             '2023',
             '2º no Technical Challenge da Flying Robots Trial League, 3º geral na Flying Robots Trial League',
           ][
-            ('2022', '3º no Technical Challenge da Flying Robots Trial League')
+          ('2022', '3º no Technical Challenge da Flying Robots Trial League')
           ],
         ],
       },
@@ -297,6 +298,11 @@ const ptBR = {
     header: 'Estamos selecionando novos membros!',
     cta: 'Candidate-se agora!',
   },
+  blog_page: {
+    title: 'Blog de Engenharia',
+    description: 'Construindo robôs mais Capazes, Seguros e Inteligentes',
+  },
+
 }
 
 export default ptBR
