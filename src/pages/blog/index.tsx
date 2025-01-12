@@ -36,12 +36,7 @@ const PublicationsPage = async () => {
   const t = useTranslation()
   const data = await readFile('./content/dumb.mdx');
 
-  const value = await compile(data, {
-    jsx: true,
-    remarkPlugins: [remarkFrontmatter, remarkMdxFrontmatter]
-  })
-
-  console.log(value)
+  console.log(data)
   return (
     <PageWrap>
       <ContentWrap>
