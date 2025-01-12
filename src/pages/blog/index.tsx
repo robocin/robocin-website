@@ -11,8 +11,13 @@ import { Footer } from '@/components'
 import { PageWrap, ContentWrap } from '../../styles/pages.styles'
 
 import { MDXProvider } from '@mdx-js/react'
-import Post from './content/dumb.mdx'
 import styled from 'styled-components'
+
+import { readFile } from 'node:fs/promises'
+
+import { compile } from '@mdx-js/mdx'
+import remarkFrontmatter from 'remark-frontmatter'
+import remarkMdxFrontmatter from 'remark-mdx-frontmatter'
 
 const components: MDXComponents = {
   em(properties: any) {
@@ -27,9 +32,16 @@ const CenteredDiv = styled.div`
   height: 100%;
   border: 2px solid red;
 `
-const PublicationsPage = () => {
+const PublicationsPage = async () => {
   const t = useTranslation()
+  const data = await readFile('./content/dumb.mdx');
 
+  const value = await compile(data, {
+    jsx: true,
+    remarkPlugins: [remarkFrontmatter, remarkMdxFrontmatter]
+  })
+
+  console.log(value)
   return (
     <PageWrap>
       <ContentWrap>
@@ -40,7 +52,6 @@ const PublicationsPage = () => {
         />*/}
         <MDXProvider components={components}>
           <CenteredDiv>
-            <Post />
           </CenteredDiv>
         </MDXProvider>
       </ContentWrap>
