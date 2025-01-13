@@ -1,58 +1,85 @@
-import { MDXComponents } from 'mdx/types'
-
 import React from 'react'
 
-import useTranslation from '@/hooks/useTranslation'
+import { NextPage, GetStaticProps } from 'next'
+import Link from 'next/link'
 
+import useTranslation from '@/hooks/useTranslation'
 
 import { Header } from '@/components/Publications'
 import { Footer } from '@/components'
 
 import { PageWrap, ContentWrap } from '../../styles/pages.styles'
 
-import { MDXProvider } from '@mdx-js/react'
-import styled from 'styled-components'
+import { compileMDX } from 'next-mdx-remote/rsc'
 
-import { readFile } from 'node:fs/promises'
+import { promises as fs } from 'fs'
+import { globby } from 'globby'
+import path from 'path'
 
-import { compile } from '@mdx-js/mdx'
-import remarkFrontmatter from 'remark-frontmatter'
-import remarkMdxFrontmatter from 'remark-mdx-frontmatter'
-
-const components: MDXComponents = {
-  em(properties: any) {
-    return <i {...properties} />
-  }
+type Props = {
+  MDXFiles: Array<MDXAttr>,
 }
 
-const CenteredDiv = styled.div`
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  border: 2px solid red;
-`
-const PublicationsPage = async () => {
-  const t = useTranslation()
-  const data = await readFile('./content/dumb.mdx');
+type MDXAttr = {
+  content: string,
+  slug: string
+  frontmatter: {
+    title: string,
+    abstract: string,
+  },
+}
 
-  console.log(data)
+const BlogPage: NextPage<Props> = ({ MDXFiles }) => {
+  const t = useTranslation()
+
   return (
     <PageWrap>
       <ContentWrap>
         <Header translate={t.blog_page.header} />
-        {/*<PublicationsList
-          translate={t.publications_page.publications_list}
-          publications={mockPublications}
-        />*/}
-        <MDXProvider components={components}>
-          <CenteredDiv>
-          </CenteredDiv>
-        </MDXProvider>
+        <ul>
+          {MDXFiles.map(file => (
+            <li key={`${file.slug}`}>
+              <Link href={`/blog/${file.slug}`}>
+                {file.slug}
+              </Link>
+            </li>)
+          )}
+        </ul>
       </ContentWrap>
       <Footer />
-    </PageWrap>
+    </PageWrap >
   )
 }
 
-export default PublicationsPage
+export const getStaticProps: GetStaticProps = async () => {
+
+  const parseMdxFile = async (f: string) => {
+    const file = await fs.readFile(f, 'utf8')
+
+    const { content, frontmatter } = await compileMDX<{ title: string, abstract: string }>({
+      source: file,
+      options: { parseFrontmatter: true },
+    })
+
+    let slug = path.basename(f, '.mdx')
+
+    return {
+      slug: slug,
+      content: content.toString(),
+      frontmatter: frontmatter,
+    }
+  }
+
+
+  const files = await globby(['src/pages/blog/content/*.mdx'])
+
+  let parsedMdxs = await Promise.all(files.map(async file => parseMdxFile(file)))
+
+  return {
+    props: {
+      MDXFiles: parsedMdxs
+    }
+  }
+}
+
+export default BlogPage;
