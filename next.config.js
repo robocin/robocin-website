@@ -9,6 +9,7 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
-}
+};
 
-module.exports = nextConfig
+// Change module.exports to export default
+module.exports = nextConfig;
