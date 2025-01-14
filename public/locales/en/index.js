@@ -265,7 +265,7 @@ const en = {
     publications_list: {
       header: {
         title: 'Our Papers',
-        description: 'Check out out description papers below',
+        description: 'Check out our description papers below',
       },
       default_filter_options: {
         all: 'All',
@@ -284,6 +284,23 @@ const en = {
       title: 'Engineering blog',
       description: 'Building Smarter, Safer, and More Capable Robots',
     },
+    publications_list: {
+      header: {
+        title: 'Our Posts',
+        description: 'Check out our posts below',
+      },
+      default_filter_options: {
+        all: 'All',
+        recent: 'Most recent',
+      },
+      publication_card: {
+        url_label: 'Read',
+      },
+      filter_results: {
+        fallback: 'Oops! No publications were found for this year.',
+      }
+    },
+
   },
   recruitment_page: {
     header: 'We\'re recruiting new members!',

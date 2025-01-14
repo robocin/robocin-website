@@ -6,14 +6,16 @@ import Main from './PublicationsList'
 import { PublicationsListDefaultProps } from './interfaces'
 import { useRouter } from 'next/router'
 
-const PublicationsList = ({ translate }: PublicationsListDefaultProps) => {
+const PublicationsList = ({ translate, publications }: PublicationsListDefaultProps) => {
   const router = useRouter()
   const { locale } = router
   const language = locale === 'en' ? 'en' : 'ptBR'
 
+  publications = publications == null ? scientificPublications : publications
+
   const [lang, setLang] = useState(language)
   const [filteredPublications, setFilteredPublications] = useState(
-    scientificPublications
+    publications
   )
 
   const yearFilterOptions = useMemo(() => {
@@ -47,11 +49,11 @@ const PublicationsList = ({ translate }: PublicationsListDefaultProps) => {
     const { value: filterValue } = e.target
 
     if (filterValue === 'all') {
-      setFilteredPublications(scientificPublications)
+      setFilteredPublications(publications!!)
       return
     }
 
-    const filteredData = scientificPublications.filter(
+    const filteredData = publications!!.filter(
       (publication) => publication.year === filterValue
     )
     setFilteredPublications(filteredData)
@@ -62,7 +64,7 @@ const PublicationsList = ({ translate }: PublicationsListDefaultProps) => {
   }, [locale])
 
   useEffect(() => {
-    setFilteredPublications(scientificPublications)
+    setFilteredPublications(publications!!)
   }, [lang])
 
   return (

@@ -1,6 +1,6 @@
-interface Publication {
+export interface Publication {
   title: string
-  description: string
+  author: string
   image?: any
   url: string
   year: string
@@ -30,7 +30,7 @@ interface Translate {
 
 export interface PublicationsListDefaultProps {
   translate: Translate
-  publications: Publication[]
+  publications?: Publication[]
 }
 
 export interface PublicationsListProps extends PublicationsListDefaultProps {

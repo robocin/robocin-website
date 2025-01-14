@@ -1,11 +1,10 @@
 import React from 'react'
 
 import { NextPage, GetStaticProps } from 'next'
-import Link from 'next/link'
 
 import useTranslation from '@/hooks/useTranslation'
 
-import { Header } from '@/components/Publications'
+import { Header, PublicationsList } from '@/components/Publications'
 import { Footer } from '@/components'
 
 import { PageWrap, ContentWrap } from '../../styles/pages.styles'
@@ -15,36 +14,44 @@ import { compileMDX } from 'next-mdx-remote/rsc'
 import { promises as fs } from 'fs'
 import { globby } from 'globby'
 import path from 'path'
+import { Publication } from '@/components/Publications/PublicationsList/interfaces'
 
 type Props = {
   MDXFiles: Array<MDXAttr>,
 }
 
+type FrontmatterProps = {
+  title: string,
+  author: string,
+  year: string
+}
+
 type MDXAttr = {
   content: string,
   slug: string
-  frontmatter: {
-    title: string,
-    abstract: string,
-  },
+  frontmatter: FrontmatterProps
 }
 
 const BlogPage: NextPage<Props> = ({ MDXFiles }) => {
   const t = useTranslation()
 
+  let publications: Publication[] = MDXFiles.map(file => {
+    return {
+      title: file.frontmatter.title,
+      author: file.frontmatter.author,
+      url: `/blog/${file.slug}`,
+      year: file.frontmatter.year
+    }
+  })
+
   return (
     <PageWrap>
       <ContentWrap>
         <Header translate={t.blog_page.header} />
-        <ul>
-          {MDXFiles.map(file => (
-            <li key={`${file.slug}`}>
-              <Link href={`/blog/${file.slug}`}>
-                {file.slug}
-              </Link>
-            </li>)
-          )}
-        </ul>
+        <PublicationsList
+          translate={t.blog_page.publications_list}
+          publications={publications}
+        />
       </ContentWrap>
       <Footer />
     </PageWrap >

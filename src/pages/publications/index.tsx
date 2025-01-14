@@ -2,8 +2,6 @@ import React from 'react'
 
 import useTranslation from '@/hooks/useTranslation'
 
-import mockPublications from '@/components/Publications/PublicationsList/utils/mockData'
-
 import { Header, TDPSection, PublicationsList } from '@/components/Publications'
 import { Footer } from '@/components'
 
@@ -19,7 +17,6 @@ const PublicationsPage = () => {
         <TDPSection translate={t.publications_page.team_description_papers} />
         <PublicationsList
           translate={t.publications_page.publications_list}
-          publications={mockPublications}
         />
       </ContentWrap>
       <Footer />
