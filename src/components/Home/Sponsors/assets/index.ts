@@ -12,6 +12,7 @@ import Tractian from './tractian-logo.png'
 import STMicroelectronics from './stmicroelectronics-logo.png'
 import TronControlesEletricos from './tron-controles-eletricos-logo.png'
 import Maxon from './maxon-logo.png'
+import Senai from './senai-logo.png'
 
 import BackgroundBlob from './sponsors-background.svg'
 import Lightbulb from './lightbulb.svg'
@@ -33,6 +34,7 @@ export {
   STMicroelectronics,
   TronControlesEletricos,
   Maxon,
+  Senai,
   BackgroundBlob,
   Lightbulb,
   Handshake,

@@ -13,15 +13,15 @@ const Sponsors = ({ translate }: SponsorsProps) => {
       <S.Column>
         <S.Row>
           <S.Brand src={Brand.CIn} alt="CIn logo" />
-          <S.Brand
+          {/* <S.Brand
             src={Brand.Cesar}
             alt="Cesar logo"
             style={{ width: '12%' }}
-          />
-          <S.Brand src={Brand.Embraer} alt="Embraer logo" />
+          /> */}
+          {/* <S.Brand src={Brand.Embraer} alt="Embraer logo" /> */}
           <S.Brand src={Brand.Hsbs} alt="HSBS logo" />
           <S.Brand src={Brand.Incognia} alt="Incognia logo" />
-          <S.Brand src={Brand.Ines} alt="INES logo" />
+          {/* <S.Brand src={Brand.Ines} alt="INES logo" /> */}
           <S.Brand src={Brand.Microsoft} alt="Microsoft logo" />
           <S.Brand src={Brand.Moura} alt="Moura logo" />
           <S.Brand
@@ -30,25 +30,35 @@ const Sponsors = ({ translate }: SponsorsProps) => {
             style={{ width: '22%' }}
           />
           <S.Brand
+            src={Brand.Itemm}
+            alt="Itemm logo"
+            style={{ width: '16%' }}
+          />
+          <S.Brand
+            src={Brand.Senai}
+            alt="Senai logo"
+            style={{ width: '16%' }}
+          />
+          {/* <S.Brand
             src={Brand.Tractian}
             alt="Tractian logo"
             style={{ width: '22%' }}
-          />
-          <S.Brand
+          /> */}
+          {/* <S.Brand
             src={Brand.STMicroelectronics}
             alt="STMicroelectronics logo"
             style={{ width: '7.5%' }}
-          />
-          <S.Brand
+          /> */}
+          {/* <S.Brand
             src={Brand.TronControlesEletricos}
             alt="STMicroelectronics logo"
             style={{ width: '12%' }}
-          />
-          <S.Brand
+          /> */}
+          {/* <S.Brand
             src={Brand.Maxon}
             alt="Maxon logo"
             style={{ width: '12%' }}
-          />
+          /> */}
         </S.Row>
       </S.Column>
       <S.Column>
