@@ -8,7 +8,7 @@ import {
   AboutUs,
   Sponsors,
   Banner,
-  Recruitment,
+  // Recruitment,
 } from '@/components'
 
 import * as S from '../styles/home.styles'
