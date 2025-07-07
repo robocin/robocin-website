@@ -22,6 +22,7 @@
     "eslint-config-next": "13.4.12",
     "fs": "^0.0.1-security",
     "globby": "^14.0.2",
+    "gray-matter": "^4.0.3",
     "next": "13.4.12",
     "next-mdx-remote": "^5.0.0",
     "next-sanity": "^5.1.2",
