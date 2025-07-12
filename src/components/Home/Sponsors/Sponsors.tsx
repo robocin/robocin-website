@@ -44,11 +44,11 @@ const Sponsors = ({ translate }: SponsorsProps) => {
             alt="Tractian logo"
             style={{ width: '22%' }}
           /> */}
-          {/* <S.Brand
+          <S.Brand
             src={Brand.STMicroelectronics}
             alt="STMicroelectronics logo"
             style={{ width: '7.5%' }}
-          /> */}
+          />
           {/* <S.Brand
             src={Brand.TronControlesEletricos}
             alt="STMicroelectronics logo"
