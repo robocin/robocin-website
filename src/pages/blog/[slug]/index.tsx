@@ -21,6 +21,8 @@ import styled from 'styled-components'
 import matter from 'gray-matter'
 // ...existing imports...
 
+import components from '../components/components'
+
 type Props = {
   slug: string
   mdxSource: MDXRemoteSerializeResult
@@ -45,7 +47,7 @@ const PostPage: NextPage<Props> = ({ slug, mdxSource }) => {
       <ContentWrap>
         <Header translate={t.blog_page.header} />
         <MDXContent>
-          <MDXRemote {...mdxSource} />
+          <MDXRemote {...mdxSource} components={components} />
         </MDXContent>
       </ContentWrap>
       <Footer />
