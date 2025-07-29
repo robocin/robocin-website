@@ -43,7 +43,7 @@ const CardsGrid = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  justify-content: center;
+  justify-content: flex-start;
   max-width: 1050px;
   margin: 0 auto;
   margin-top: 2rem;
