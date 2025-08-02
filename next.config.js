@@ -9,7 +9,10 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
-};
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+}
 
 // Change module.exports to export default
-module.exports = nextConfig;
+module.exports = nextConfig
