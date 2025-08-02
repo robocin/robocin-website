@@ -15,7 +15,7 @@ import { promises as fs } from 'fs'
 import { globby } from 'globby'
 import path from 'path'
 
-import BlogCard from '@/components/BlogCard'
+import BlogCard from '@/components/Blog/BlogCard'
 
 import styled from 'styled-components'
 
@@ -95,7 +95,7 @@ export const getStaticProps: GetStaticProps = async () => {
       source: file,
       options: { parseFrontmatter: true },
     })
-    let slug = path.basename(f, '.mdx')
+    const slug = path.basename(f, '.mdx')
 
     return {
       slug: slug,
@@ -106,7 +106,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
   const files = await globby(['src/pages/blog/content/*.mdx'])
 
-  let parsedMdxs = await Promise.all(
+  const parsedMdxs = await Promise.all(
     files.map(async (file) => parseMdxFile(file))
   )
 

@@ -8,6 +8,8 @@ import AboutUs from './Home/AboutUs'
 import Sponsors from './Home/Sponsors'
 import Banner from './Home/Bannerv3'
 import Recruitment from './Home/Recruitment'
+import CustomImage from './Blog/CustomImage'
+import BlogCard from './Blog/BlogCard'
 
 export {
   Navbar,
@@ -19,4 +21,6 @@ export {
   Sponsors,
   Banner,
   Recruitment,
+  BlogCard,
+  CustomImage,
 }

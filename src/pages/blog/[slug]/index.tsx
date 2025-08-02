@@ -21,7 +21,7 @@ import styled from 'styled-components'
 import matter from 'gray-matter'
 // ...existing imports...
 
-import components from '../components/components'
+import CustomImage from '@/components/Blog'
 
 type Props = {
   slug: string
@@ -47,7 +47,7 @@ const PostPage: NextPage<Props> = ({ slug, mdxSource }) => {
       <ContentWrap>
         <Header translate={t.blog_page.header} />
         <MDXContent>
-          <MDXRemote {...mdxSource} components={components} />
+          <MDXRemote {...mdxSource} components={CustomImage} />
         </MDXContent>
       </ContentWrap>
       <Footer />
