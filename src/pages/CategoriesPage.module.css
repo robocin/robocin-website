@@ -1,0 +1,352 @@
+/* ── Page ── */
+
+.page {
+  min-height: calc(100vh - 60px);
+}
+
+/* ── Intro section ── */
+
+.intro {
+  padding: var(--space-16) var(--space-8);
+  background-color: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.introContent {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  text-align: left;
+}
+
+.introTitle {
+  font-size: var(--font-size-4xl);
+  font-weight: 800;
+  line-height: var(--line-height-heading);
+  color: var(--color-primary);
+  margin-bottom: var(--space-4);
+}
+
+.introDescription {
+  font-size: var(--font-size-xl);
+  color: var(--color-text-muted);
+  line-height: var(--line-height-base);
+  max-width: var(--max-width-prose);
+  margin-left: 0;
+  margin-bottom: var(--space-8);
+}
+
+/* ── Pill nav ── */
+
+.pillNav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  justify-content: flex-start;
+}
+
+.pill {
+  display: inline-block;
+  padding: var(--space-2) var(--space-6);
+  border-radius: 999px;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.pill:hover {
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  text-decoration: none;
+}
+
+/* ── Category section ── */
+
+.categorySection {
+  scroll-margin-top: 72px; /* clears the fixed navbar */
+}
+
+/* ── Banner ── */
+
+.banner {
+  width: 100%;
+  height: 260px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Dark-to-transparent gradient overlay, from the left */
+.banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(40, 77, 46, 0.88) 0%,
+    rgba(40, 77, 46, 0.55) 50%,
+    rgba(40, 77, 46, 0.15) 100%
+  );
+}
+
+/* Inner wrapper aligns the title to the standard content margin */
+.bannerInner {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-8);
+}
+
+.bannerTitle {
+  font-size: var(--font-size-4xl);
+  font-weight: 800;
+  line-height: var(--line-height-heading);
+  color: var(--color-text-light);
+}
+
+/* ── Two-column content row ── */
+
+.contentOuter {
+  padding: var(--space-12) var(--space-8);
+  background-color: var(--color-bg);
+}
+
+.contentRow {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--space-8);
+  align-items: start;
+}
+
+.squareImageWrapper {
+  aspect-ratio: 1 / 1;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.squareImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.descriptionBlock {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.descriptionText {
+  font-size: var(--font-size-base);
+  color: var(--color-text-muted);
+  line-height: var(--line-height-base);
+  margin: 0;
+}
+
+.bulletList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bulletItem {
+  position: relative;
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+  line-height: var(--line-height-base);
+  padding-left: var(--space-6);
+}
+
+.bulletItem::before {
+  content: '';
+  position: absolute;
+  left: var(--space-1);
+  top: 0.58em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+}
+
+/* ── Collapsible results ── */
+
+.resultsOuter {
+  padding: 0 var(--space-8) var(--space-8);
+}
+
+.resultsInner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.resultsToggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: var(--space-4) var(--space-6);
+  background-color: var(--color-accent);
+  border: none;
+  border-radius: var(--border-radius);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-base);
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.resultsToggle:hover {
+  background-color: #d1efd6;
+}
+
+.chevron {
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+/* ── Results table ── */
+
+.tableScroll {
+  overflow-x: auto;
+  margin-top: var(--space-4);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--font-size-base);
+}
+
+.table th {
+  background-color: var(--color-primary-dark);
+  color: var(--color-text-light);
+  padding: var(--space-3) var(--space-6);
+  text-align: left;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.table th:first-child {
+  border-radius: var(--border-radius) 0 0 0;
+}
+
+.table th:last-child {
+  border-radius: 0 var(--border-radius) 0 0;
+}
+
+.table td {
+  padding: var(--space-3) var(--space-6);
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text);
+}
+
+.table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.table tbody tr:hover {
+  background-color: var(--color-accent);
+}
+
+.yearCell {
+  font-weight: 700;
+  color: var(--color-primary);
+  white-space: nowrap;
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 768px) {
+  .intro {
+    padding: var(--space-12) var(--space-4);
+  }
+
+  .introTitle {
+    font-size: var(--font-size-3xl);
+  }
+
+  .introDescription {
+    font-size: var(--font-size-base);
+  }
+
+  .pillNav {
+    justify-content: flex-start;
+  }
+
+  .banner {
+    height: 200px;
+  }
+
+  .bannerTitle {
+    font-size: var(--font-size-3xl);
+  }
+
+  .bannerInner {
+    padding: 0 var(--space-4);
+  }
+
+  .contentOuter {
+    padding: var(--space-8) var(--space-4);
+  }
+
+  .contentRow {
+    grid-template-columns: 1fr;
+  }
+
+  .squareImageWrapper {
+    max-width: 280px;
+  }
+
+  .resultsOuter {
+    padding: 0 var(--space-4) var(--space-8);
+  }
+
+  .table th,
+  .table td {
+    padding: var(--space-2) var(--space-4);
+    font-size: var(--font-size-sm);
+  }
+}
+
+@media (max-width: 480px) {
+  .introTitle {
+    font-size: var(--font-size-2xl);
+  }
+
+  .pill {
+    font-size: 0.8rem;
+    padding: var(--space-2) var(--space-4);
+  }
+
+  .banner {
+    height: 160px;
+  }
+
+  .bannerTitle {
+    font-size: var(--font-size-2xl);
+  }
+
+  .squareImageWrapper {
+    max-width: 100%;
+  }
+}

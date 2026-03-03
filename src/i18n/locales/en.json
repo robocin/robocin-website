@@ -1,0 +1,126 @@
+{
+  "nav": {
+    "categories": "Categories",
+    "blog": "Blog",
+    "publications": "Publications"
+  },
+  "hero": {
+    "title": "Innovation in robotics starts here",
+    "subtitle": "RobôCIn is a robotics research and development group from CIn-UFPE, competing in the world's top robotics competitions.",
+    "cta": "Meet the team"
+  },
+  "partners": {
+    "title": "Partnerships",
+    "description": "Connect your company to RobôCIn's innovation and expertise to develop intelligent solutions that shape the future of technology.",
+    "cta": "Learn more",
+    "caption": "Who has already trusted our work:"
+  },
+  "categories": {
+    "title": "Categories",
+    "cta": "See more"
+  },
+  "areas": {
+    "title": "Areas of Expertise",
+    "cta": "Explore Categories",
+    "categories": ["Artificial Intelligence", "Autonomous Robotics", "Computer Vision", "Embedded Systems"]
+  },
+  "sponsors": {
+    "title": "Sponsors",
+    "ctaText": "Want your brand here?",
+    "ctaButton": "Become a sponsor"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "The latest news, research updates, and insights from the RobôCIn team.",
+    "readMore": "Read more",
+    "minRead": "min read",
+    "backToBlog": "Back to Blog",
+    "alsoRead": "Also read",
+    "loading": "Loading posts…",
+    "empty": "No posts available yet.",
+    "notFound": "Post not found."
+  },
+  "publications": {
+    "title": "Publications",
+    "subtitle": "Peer-reviewed papers and research contributions by the RobôCIn team, published at leading robotics and AI venues.",
+    "filterLabel": "Filter by year",
+    "filterAll": "All"
+  },
+  "categoriesPage": {
+    "title": "Competition Categories",
+    "description": "RobôCIn competes across four distinct robotics leagues, each presenting unique engineering and AI challenges. Explore each category to learn about our robots, approach, and competition history.",
+    "ssl": {
+      "name": "Small Size League (SSL)",
+      "description": "The SSL is one of the most technically demanding RoboCup leagues. Teams of up to six omni-directional robots compete on a shared field, relying on centralized AI and high-speed computer vision to outmaneuver opponents in real time.",
+      "bullets": [
+        "Robots are constrained to 180 mm diameter and operate at speeds exceeding 3 m/s",
+        "Centralized strategy software processes overhead camera feeds at 60 fps",
+        "Machine learning models drive opponent prediction and dynamic play selection"
+      ]
+    },
+    "sim2d": {
+      "name": "2D Simulation",
+      "description": "In the 2D Simulation league, multi-agent AI systems coach virtual soccer teams inside a physics simulator. With no hardware constraints, teams push the limits of strategy, coordination, and learning algorithms.",
+      "bullets": [
+        "Fully software-based: 11 autonomous agents vs. 11 in a shared 2D environment",
+        "Focus areas include multi-agent reinforcement learning and emergent team tactics",
+        "Competitions run on identical hardware, making algorithmic quality the sole differentiator"
+      ]
+    },
+    "drone": {
+      "name": "Drone",
+      "description": "The Drone category challenges teams to develop autonomous unmanned aerial vehicles capable of navigation, object detection, and interaction tasks in complex indoor environments without any external computing.",
+      "bullets": [
+        "Onboard processing only — no external computing allowed during flight",
+        "Tasks include obstacle avoidance, target recognition, and precision landing",
+        "Tight integration of computer vision, control theory, and embedded software"
+      ]
+    },
+    "humanoid": {
+      "name": "Humanoid",
+      "description": "Humanoid robots must walk, balance, and play soccer on a small field, showcasing advances in bipedal locomotion, real-time vision, and autonomous decision-making under physical constraints.",
+      "bullets": [
+        "Full bipedal locomotion with dynamic balance and fall recovery",
+        "Onboard vision pipeline for ball and goal detection without external sensors",
+        "Motion planning adapts in real time to field conditions and game state"
+      ]
+    },
+    "table": {
+      "title": "Competition Results",
+      "year": "Year",
+      "showResults": "Show Results",
+      "hideResults": "Hide Results"
+    }
+  },
+  "history": {
+    "title": "Our Journey",
+    "subtitle": "Over two decades building the future of Brazilian robotics.",
+    "milestones": [
+      {
+        "year": "1998",
+        "title": "Foundation",
+        "description": "RobôCIn is founded at CIn-UFPE by students passionate about robotics and artificial intelligence."
+      },
+      {
+        "year": "2003",
+        "title": "First RoboCup",
+        "description": "The team participates for the first time in RoboCup, the world's largest robotics competition, marking the start of a long international journey."
+      },
+      {
+        "year": "2014",
+        "title": "Expansion of Fronts",
+        "description": "New labs and projects broaden the group's work in computer vision, embedded systems, and machine learning."
+      },
+      {
+        "year": "2019",
+        "title": "World Titles",
+        "description": "RobôCIn wins titles in the SSL and VSS categories at RoboCup, establishing Brazil among the world's top robotics powers."
+      },
+      {
+        "year": "2023",
+        "title": "25 Years of Innovation",
+        "description": "With over 200 members and a presence at competitions across five continents, the group celebrates 25 years of advancing science and technology."
+      }
+    ]
+  }
+}
