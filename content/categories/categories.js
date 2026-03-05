@@ -15,47 +15,39 @@
 
 export const categoryData = {
   ssl: {
-    competitions: ['RoboCup', 'LARC/CBR'],
+    competitions: ['LARC', 'RoboCup'],
     rows: [
-      { year: 2024, results: { 'RoboCup': '2nd',  'LARC/CBR': '1st' } },
-      { year: 2023, results: { 'RoboCup': '1st',  'LARC/CBR': '1st' } },
-      { year: 2022, results: { 'RoboCup': '3rd',  'LARC/CBR': '1st' } },
-      { year: 2021, results: { 'RoboCup': '—',    'LARC/CBR': '1st' } },
-      { year: 2019, results: { 'RoboCup': '1st',  'LARC/CBR': '1st' } },
-      { year: 2018, results: { 'RoboCup': 'QF',   'LARC/CBR': '2nd' } },
-      { year: 2017, results: { 'RoboCup': 'SF',   'LARC/CBR': '1st' } },
+      { year: 2023, results: { 'LARC': '1st', 'RoboCup': '1st Div B, 1st Ball Placement Technical Challenge, 5th Chip Pass Challenge' } },
+      { year: 2022, results: { 'LARC': '1st', 'RoboCup': '1st Div B, 1st Ball Placement Technical Challenge, 2nd Vision Blackout, 3rd Dribbling Challenge' } },
+      { year: 2021, results: { 'LARC': '1st', 'RoboCup': '3rd Div A/B, 1st Ball Placement Technical Challenge, 5th Hardware Challenge' } },
+      { year: 2020, results: { 'LARC': '1st', 'RoboCup': 'Postponed' } },
+      { year: 2019, results: { 'LARC': '5th', 'RoboCup': '3rd/4th Div B' } },
+      { year: 2018, results: { 'LARC': '5th', 'RoboCup': 'N/A' } },
     ],
   },
 
   sim2d: {
-    competitions: ['RoboCup', 'LARC/CBR'],
+    competitions: ['RoboCup', 'LARC', 'IRONCup'],
     rows: [
-      { year: 2024, results: { 'RoboCup': '3rd',  'LARC/CBR': '1st' } },
-      { year: 2023, results: { 'RoboCup': 'QF',   'LARC/CBR': '1st' } },
-      { year: 2022, results: { 'RoboCup': 'SF',   'LARC/CBR': '1st' } },
-      { year: 2021, results: { 'RoboCup': '—',    'LARC/CBR': '1st' } },
-      { year: 2019, results: { 'RoboCup': '2nd',  'LARC/CBR': '1st' } },
-      { year: 2018, results: { 'RoboCup': '3rd',  'LARC/CBR': '2nd' } },
+      { year: 2023, results: { 'RoboCup': '6th',       'LARC': '1st', 'IRONCup': '2nd' } },
+      { year: 2022, results: { 'RoboCup': '10th',      'LARC': '1st', 'IRONCup': '3rd' } },
+      { year: 2021, results: { 'RoboCup': '7th',       'LARC': '1st', 'IRONCup': '3rd' } },
+      { year: 2020, results: { 'RoboCup': 'Postponed', 'LARC': '3rd', 'IRONCup': '6th' } },
+      { year: 2019, results: { 'RoboCup': '9th',       'LARC': '2nd', 'IRONCup': 'N/A' } },
+      { year: 2018, results: { 'RoboCup': 'N/A',       'LARC': '4th', 'IRONCup': '6th' } },
     ],
   },
 
   drone: {
-    competitions: ['RoboCup'],
+    competitions: ['LARC'],
     rows: [
-      { year: 2024, results: { 'RoboCup': '1st' } },
-      { year: 2023, results: { 'RoboCup': '1st' } },
-      { year: 2022, results: { 'RoboCup': '2nd' } },
-      { year: 2021, results: { 'RoboCup': '3rd' } },
+      { year: 2023, results: { 'LARC': '2nd at Flying Robots Trial League Technical Challenge, 3rd at Flying Robots Trial League' } },
+      { year: 2022, results: { 'LARC': '3rd at Flying Robots Trial League Technical Challenge' } },
     ],
   },
 
   humanoid: {
-    competitions: ['RoboCup'],
-    rows: [
-      { year: 2024, results: { 'RoboCup': '3rd' } },
-      { year: 2023, results: { 'RoboCup': 'QF'  } },
-      { year: 2022, results: { 'RoboCup': 'SF'  } },
-      { year: 2021, results: { 'RoboCup': '3rd' } },
-    ],
+    competitions: [],
+    rows: [],
   },
 };
