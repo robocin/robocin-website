@@ -118,8 +118,8 @@ function CategorySection({ id, t }) {
         </div>
       </div>
 
-      {/* Collapsible results table */}
-      <ResultsTable categoryId={id} t={t} />
+      {/* NOTE: Humanoid has no competition results yet. */}
+      { id !== 'humanoid' && <ResultsTable categoryId={id} t={t} />}
     </section>
   );
 }
