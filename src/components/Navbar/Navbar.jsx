@@ -29,6 +29,7 @@ function Navbar() {
         </button>
 
         <ul className={`${styles.links} ${menuOpen ? styles.linksOpen : ''}`}>
+          <li><NavLink to="/" end onClick={close}>{t('nav.home')}</NavLink></li>
           <li><NavLink to="/categories" onClick={close}>{t('nav.categories')}</NavLink></li>
           <li><NavLink to="/blog" onClick={close}>{t('nav.blog')}</NavLink></li>
           <li><NavLink to="/publications" onClick={close}>{t('nav.publications')}</NavLink></li>
