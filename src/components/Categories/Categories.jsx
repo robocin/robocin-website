@@ -7,6 +7,7 @@ import droneCategory from '../../assets/drone-category.png';
 import humanoidCategory from '../../assets/humanoid-category.png';
 
 const categoryImages = [sslCategory, twoDCategory, droneCategory, humanoidCategory];
+const categoryIds = ['ssl', 'sim2d', 'drone', 'humanoid'];
 
 function Categories() {
   const { t } = useTranslation();
@@ -21,10 +22,10 @@ function Categories() {
         </div>
         <div className={styles.grid}>
           {items.map((name, i) => (
-            <div key={name} className={styles.card}>
+            <Link key={name} to={`/categories#${categoryIds[i]}`} className={styles.card}>
               <img className={styles.image} src={categoryImages[i]} alt={name} />
               <span className={styles.tag}>{name}</span>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
