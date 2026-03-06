@@ -1,12 +1,13 @@
 {
   "nav": {
+    "home": "Home",
     "categories": "Categories",
     "blog": "Blog",
     "publications": "Publications"
   },
   "hero": {
-    "title": "Innovation in robotics starts here",
-    "subtitle": "RobôCIn is a robotics research and development group from CIn-UFPE, competing in the world's top robotics competitions.",
+    "title": "RobôCIn",
+    "subtitle": "A research and development team from the Federal University of Pernambuco, Brazil, specializing in robotics and artificial intelligence.",
     "cta": "Meet the team"
   },
   "partners": {
