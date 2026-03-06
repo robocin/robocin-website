@@ -9,7 +9,6 @@ function Hero() {
       <div className={styles.content}>
         <h1 className={styles.title}>{t('hero.title')}</h1>
         <p className={styles.subtitle}>{t('hero.subtitle')}</p>
-        <Link to="/about" className={styles.cta}>{t('hero.cta')}</Link>
       </div>
     </section>
   );

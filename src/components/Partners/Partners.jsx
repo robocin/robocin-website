@@ -13,7 +13,6 @@ function Partners() {
         <div className={styles.left}>
           <h2 className={styles.title}>{t('partners.title')}</h2>
           <p className={styles.description}>{t('partners.description')}</p>
-          <Link to="/partners" className={styles.cta}>{t('partners.cta')}</Link>
         </div>
 
         <div className={styles.right}>
