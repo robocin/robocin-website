@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import Sponsors from '../components/Sponsors/Sponsors.jsx';
 import publications from '../../content/publications/publications.js';
 import styles from './Publications.module.css';
 
@@ -114,6 +115,7 @@ function Publications() {
           </div>
         </div>
       </div>
+      <Sponsors />
     </div>
   );
 }

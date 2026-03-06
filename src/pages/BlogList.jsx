@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { loadBlogPosts } from '../utils/markdown.js';
+import Sponsors from '../components/Sponsors/Sponsors.jsx';
 import BlogCard from '../components/BlogCard/BlogCard.jsx';
 import styles from './BlogList.module.css';
 
@@ -41,6 +42,7 @@ function BlogList() {
           )}
         </div>
       </div>
+      <Sponsors />
     </div>
   );
 }

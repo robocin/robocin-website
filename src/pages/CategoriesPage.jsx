@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import Sponsors from '../components/Sponsors/Sponsors.jsx';
 import styles from './CategoriesPage.module.css';
 import { categoryData } from '../../content/categories/categories.js';
-import sslImage from '../assets/ssl-category.png';
+import sslImage from '../assets/ssl-category-banner.png';
 import twoDImage from '../assets/2d-category.png';
 import droneImage from '../assets/drone-category.png';
 import humanoidImage from '../assets/humanoid-category.png';
@@ -148,6 +149,7 @@ function CategoriesPage() {
       {CATEGORY_IDS.map((id) => (
         <CategorySection key={id} id={id} t={t} />
       ))}
+      <Sponsors />
     </div>
   );
 }

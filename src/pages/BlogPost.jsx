@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import ReactMarkdown from 'react-markdown';
 import { loadBlogPosts } from '../utils/markdown.js';
+import Sponsors from '../components/Sponsors/Sponsors.jsx';
 import BlogCard from '../components/BlogCard/BlogCard.jsx';
 import styles from './BlogPost.module.css';
 
@@ -101,6 +102,7 @@ function BlogPost() {
           </div>
         </div>
       )}
+      <Sponsors />
     </div>
   );
 }
