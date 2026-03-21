@@ -15,8 +15,10 @@
 
 export const categoryData = {
   ssl: {
-    competitions: ['LARC', 'RoboCup'],
+    competitions: ['LARC', 'RoboCup', 'CBR'],
     rows: [
+      { year: 2025, results: { 'RoboCup': '3rd Div A', 'CBR': '1st' } },
+      { year: 2024, results: { 'LARC': '1st', 'RoboCup': '4th Div A' } },
       { year: 2023, results: { 'LARC': '1st', 'RoboCup': '1st Div B, 1st Ball Placement Technical Challenge, 5th Chip Pass Challenge' } },
       { year: 2022, results: { 'LARC': '1st', 'RoboCup': '1st Div B, 1st Ball Placement Technical Challenge, 2nd Vision Blackout, 3rd Dribbling Challenge' } },
       { year: 2021, results: { 'LARC': '1st', 'RoboCup': '3rd Div A/B, 1st Ball Placement Technical Challenge, 5th Hardware Challenge' } },
@@ -27,8 +29,11 @@ export const categoryData = {
   },
 
   sim2d: {
-    competitions: ['RoboCup', 'LARC', 'IRONCup'],
+    competitions: ['RoboCup', 'LARC', 'IRONCup', 'RCX', 'Iran Open', 'CBR'],
     rows: [
+      { year: 2026, results: { 'IRONCup': '1st' } },
+      { year: 2025, results: { 'RoboCup': '4th', 'IRONCup': '1st', 'RCX': '3rd', 'Iran Open': '4th', 'CBR': '3rd' } },
+      { year: 2024, results: { 'RoboCup': '6th',       'LARC': '1st', 'IRONCup': '2nd', 'RCX': '1st', 'Iran Open': '5th' } },
       { year: 2023, results: { 'RoboCup': '6th',       'LARC': '1st', 'IRONCup': '2nd' } },
       { year: 2022, results: { 'RoboCup': '10th',      'LARC': '1st', 'IRONCup': '3rd' } },
       { year: 2021, results: { 'RoboCup': '7th',       'LARC': '1st', 'IRONCup': '3rd' } },
@@ -39,8 +44,10 @@ export const categoryData = {
   },
 
   drone: {
-    competitions: ['LARC'],
+    competitions: ['LARC', 'FIRA', 'CBR'],
     rows: [
+      { year: 2025, results: { 'CBR': '1st' } },
+      { year: 2024, results: { 'LARC': '3rd', 'FIRA': '1st' } },
       { year: 2023, results: { 'LARC': '2nd at Flying Robots Trial League Technical Challenge, 3rd at Flying Robots Trial League' } },
       { year: 2022, results: { 'LARC': '3rd at Flying Robots Trial League Technical Challenge' } },
     ],
