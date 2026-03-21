@@ -4,9 +4,9 @@ import Sponsors from '../components/Sponsors/Sponsors.jsx';
 import styles from './CategoriesPage.module.css';
 import { categoryData } from '../../content/categories/categories.js';
 import sslImage from '../assets/ssl-category-banner.png';
-import twoDImage from '../assets/2d-category.png';
-import droneImage from '../assets/drone-category.png';
-import humanoidImage from '../assets/humanoid-category.png';
+import twoDImage from '../assets/2d-category.jpg';
+import droneImage from '../assets/drone-category.webp';
+import humanoidImage from '../assets/humanoid-category.jpg';
 
 const CATEGORY_IDS = ['ssl', 'sim2d', 'drone', 'humanoid'];
 

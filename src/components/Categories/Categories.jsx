@@ -2,9 +2,9 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import styles from './Categories.module.css';
 import sslCategory from '../../assets/ssl-category.png';
-import twoDCategory from '../../assets/2d-category.png';
-import droneCategory from '../../assets/drone-category.png';
-import humanoidCategory from '../../assets/humanoid-category.png';
+import twoDCategory from '../../assets/2d-category.jpg';
+import droneCategory from '../../assets/drone-category.webp';
+import humanoidCategory from '../../assets/humanoid-category.jpg';
 
 const categoryImages = [sslCategory, twoDCategory, droneCategory, humanoidCategory];
 const categoryIds = ['ssl', 'sim2d', 'drone', 'humanoid'];

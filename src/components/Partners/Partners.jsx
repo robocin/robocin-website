@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
 import imeLogo from '../../assets/ime-logo.png';
-import mouraLogo from '../../assets/moura-logo.svg';
+import itemmLogo from '../../assets/itemm-logo.png';
 import styles from './Partners.module.css';
 
 function Partners() {
@@ -20,7 +19,7 @@ function Partners() {
             <p className={styles.caption}>{t('partners.caption')}</p>
             <div className={styles.images}>
               <img src={imeLogo} alt="IME" className={styles.partnerLogo} />
-              <img src={mouraLogo} alt="Moura" className={styles.partnerLogo} />
+              <img src={itemmLogo} alt="ITEMM" className={styles.partnerLogo} />
             </div>
           </div>
         </div>
