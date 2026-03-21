@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
 import cinLogo from '../../assets/cin-logo.svg';
 import incogniaLogo from '../../assets/incognia-logo.svg';
 import microsoftLogo from '../../assets/microsoft-logo.svg';
@@ -38,7 +37,7 @@ function Sponsors() {
       <div className={styles.inner}>
         <div className={styles.cta}>
           <p className={styles.ctaText}>{t('sponsors.ctaText')}</p>
-          <Link to="/sponsors" className={styles.ctaButton}>{t('sponsors.ctaButton')}</Link>
+          <a href="mailto:robocin@cin.ufpe.br" className={styles.ctaButton}>{t('sponsors.ctaButton')}</a>
         </div>
       </div>
     </section>
