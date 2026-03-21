@@ -23,7 +23,8 @@
   "areas": {
     "title": "Áreas de Atuação",
     "cta": "Conheça as Categorias",
-    "categories": ["Inteligência Artificial", "Robótica Autônoma", "Visão Computacional", "Embarcados"]
+    "categories": ["Small Size League", "Simulação 2D", "Drones", "Humanoides"],
+    "items": ["Inteligência Artificial", "Robótica Autônoma", "Visão Computacional", "Embarcados"]
   },
   "sponsors": {
     "title": "Patrocinadores",
@@ -95,32 +96,42 @@
   },
   "history": {
     "title": "Nossa Trajetória",
-    "subtitle": "Mais de duas décadas construindo o futuro da robótica brasileira.",
+    "subtitle": "Mais de uma década avançando a robótica brasileira.",
     "milestones": [
       {
-        "year": "1998",
+        "year": "2015",
         "title": "Fundação",
-        "description": "O RobôCIn é fundado no Centro de Informática da UFPE por estudantes apaixonados por robótica e inteligência artificial."
-      },
-      {
-        "year": "2003",
-        "title": "Primeira RoboCup",
-        "description": "A equipe participa pela primeira vez da RoboCup, a maior competição de robótica do mundo, marcando o início de uma longa jornada internacional."
-      },
-      {
-        "year": "2014",
-        "title": "Expansão das Frentes",
-        "description": "Novos laboratórios e projetos ampliam a atuação do grupo em visão computacional, sistemas embarcados e aprendizado de máquina."
+        "description": "RobôCIn é fundado por estudantes e professores da UFPE."
       },
       {
         "year": "2019",
-        "title": "Títulos Mundiais",
-        "description": "O RobôCIn conquista títulos nas categorias SSL e VSS da RoboCup, consolidando o Brasil entre as maiores potências da robótica mundial."
+        "title": "Primeira RoboCup",
+        "description": "O grupo participa de sua primeira RoboCup, uma das maiores competições internacionais de robótica."
+      },
+      {
+        "year": "2021",
+        "title": "Campeões (LARC)",
+        "description": "O RobôCIn foi campeão nas categorias de simulação 2D e Very Small Size Soccer (VSS) na competição de robótica latino-americana."
+      },
+      {
+        "year": "2022",
+        "title": "Campeões da Divisão B (RoboCup)",
+        "description": "O RobôCIn é campeão na divisão B da RoboCup na categoria Small Size League (SSL)."
       },
       {
         "year": "2023",
-        "title": "25 Anos de Inovação",
-        "description": "Com mais de 200 membros e presença em competições nos cinco continentes, o grupo celebra 25 anos impulsionando ciência e tecnologia."
+        "title": "Bicampeões da Divisão B (RoboCup)",
+        "description": "O grupo se torna bicampeão da divisão B na categoria SSL."
+      },
+      {
+        "year": "2024",
+        "title": "Estreia na Divisão A (RoboCup), campeões (FIRA)",
+        "description": "Avança para a divisão A, alcançando o 4º lugar na categoria de SSL. O grupo também é campeão na categoria de drones em outra competição."
+      },
+      {
+        "year": "2025",
+        "title": "Avanço na Divisão A (RoboCup), campeões (CBR)",
+        "description": "Progride para 3º lugar da divisão A na categoria SSL e vence a Competição Brasileira de Robótica na categoria de drones."
       }
     ]
   }

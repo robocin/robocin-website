@@ -23,7 +23,8 @@
   "areas": {
     "title": "Areas of Expertise",
     "cta": "Explore Categories",
-    "categories": ["Artificial Intelligence", "Autonomous Robotics", "Computer Vision", "Embedded Systems"]
+    "categories": ["Small Size League", "2D Simulation", "Drones", "Humanoids"],
+    "items": ["Artificial Intelligence", "Autonomous Robotics", "Computer Vision", "Embedded Systems"]
   },
   "sponsors": {
     "title": "Sponsors",
@@ -95,32 +96,42 @@
   },
   "history": {
     "title": "Our Journey",
-    "subtitle": "Over two decades building the future of Brazilian robotics.",
+    "subtitle": "Over one decade advancing Brazilian robotics.",
     "milestones": [
       {
-        "year": "1998",
+        "year": "2015",
         "title": "Foundation",
-        "description": "RobôCIn is founded at CIn-UFPE by students passionate about robotics and artificial intelligence."
-      },
-      {
-        "year": "2003",
-        "title": "First RoboCup",
-        "description": "The team participates for the first time in RoboCup, the world's largest robotics competition, marking the start of a long international journey."
-      },
-      {
-        "year": "2014",
-        "title": "Expansion of Fronts",
-        "description": "New labs and projects broaden the group's work in computer vision, embedded systems, and machine learning."
+        "description": "RobôCIn is founded by students and professors at UFPE."
       },
       {
         "year": "2019",
-        "title": "World Titles",
-        "description": "RobôCIn wins titles in the SSL and VSS categories at RoboCup, establishing Brazil among the world's top robotics powers."
+        "title": "First RoboCup",
+        "description": "The group participates in its first RoboCup, one of the largest international robotics competitions."
+      },
+      {
+        "year": "2021",
+        "title": "Champions (LARC)",
+        "description": "RobôCIn was champion in the 2D Simulation and Very Small Size Soccer (VSS) categories at the Latin American Robotics Competition."
+      },
+      {
+        "year": "2022",
+        "title": "Division B Champions (RoboCup)",
+        "description": "RobôCIn becomes champion in RoboCup Division B in the Small Size League (SSL) category."
       },
       {
         "year": "2023",
-        "title": "25 Years of Innovation",
-        "description": "With over 200 members and a presence at competitions across five continents, the group celebrates 25 years of advancing science and technology."
+        "title": "Back-to-Back Division B Champions (RoboCup)",
+        "description": "The group becomes two-time champion of RoboCup Division B in the SSL category."
+      },
+      {
+        "year": "2024",
+        "title": "Division A Debut (RoboCup), Champions (FIRA)",
+        "description": "Advances to Division A, reaching 4th place in the SSL category. The group also becomes champion in the drone category at another competition."
+      },
+      {
+        "year": "2025",
+        "title": "Advancing in Division A (RoboCup), Champions (CBR)",
+        "description": "Advances to 3rd place in Division A in the SSL category and wins the Brazilian Robotics Competition in the drone category."
       }
     ]
   }
