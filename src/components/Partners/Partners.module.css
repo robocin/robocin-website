@@ -58,6 +58,8 @@
 
 .cta:hover {
   background-color: var(--color-primary-dark);
+  color: var(--color-text-light);
+  text-decoration: none;
 }
 
 /* ── Right side ── */
@@ -91,6 +93,6 @@
 .partnerLogo {
   flex: 1;
   min-width: 0;
-  max-height: 80px;
+  max-height: 200px;
   object-fit: contain;
 }

@@ -50,6 +50,8 @@
 
 .cta:hover {
   background-color: var(--color-primary-dark);
+  color: var(--color-text-light);
+  text-decoration: none;
 }
 
 .grid {
