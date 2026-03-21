@@ -4,7 +4,7 @@ import styles from './Areas.module.css';
 
 function Areas() {
   const { t } = useTranslation();
-  const categories = t('areas.categories', { returnObjects: true });
+  const categories = t('areas.items', { returnObjects: true });
 
   return (
     <section className={styles.areas}>
