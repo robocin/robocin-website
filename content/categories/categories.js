@@ -29,11 +29,11 @@ export const categoryData = {
   },
 
   sim2d: {
-    competitions: ['RoboCup', 'LARC', 'IRONCup', 'RCX', 'Iran Open', 'CBR'],
+    competitions: ['RoboCup', 'RoboCup TC', 'LARC', 'IRONCup', 'RCX', 'Iran Open', 'CBR'],
     rows: [
       { year: 2026, results: { 'IRONCup': '1st' } },
-      { year: 2025, results: { 'RoboCup': '4th', 'IRONCup': '1st', 'RCX': '3rd', 'Iran Open': '4th', 'CBR': '3rd' } },
-      { year: 2024, results: { 'RoboCup': '6th',       'LARC': '1st', 'IRONCup': '2nd', 'RCX': '1st', 'Iran Open': '5th' } },
+      { year: 2025, results: { 'RoboCup': '4th', 'RoboCup TC': '2nd (Soccer Trajectory Prediction)', 'IRONCup': '1st', 'RCX': '3rd', 'Iran Open': '4th', 'CBR': '3rd' } },
+      { year: 2024, results: { 'RoboCup': '6th', 'RoboCup TC': '2nd (Cooperative Challenge)', 'LARC': '1st', 'IRONCup': '2nd', 'RCX': '1st', 'Iran Open': '5th' } },
       { year: 2023, results: { 'RoboCup': '6th',       'LARC': '1st', 'IRONCup': '2nd' } },
       { year: 2022, results: { 'RoboCup': '10th',      'LARC': '1st', 'IRONCup': '3rd' } },
       { year: 2021, results: { 'RoboCup': '7th',       'LARC': '1st', 'IRONCup': '3rd' } },
