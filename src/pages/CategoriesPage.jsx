@@ -3,14 +3,22 @@ import { useTranslation } from 'react-i18next';
 import Sponsors from '../components/Sponsors/Sponsors.jsx';
 import styles from './CategoriesPage.module.css';
 import { categoryData } from '../../content/categories/categories.js';
-import sslImage from '../assets/ssl-category-banner.png';
+import sslBannerImage from '../assets/ssl-category-banner.png';
+import sslImage from '../assets/ssl-category.png';
 import twoDImage from '../assets/2d-category.jpg';
 import droneImage from '../assets/drone-category.webp';
 import humanoidImage from '../assets/humanoid-category.jpg';
 
 const CATEGORY_IDS = ['ssl', 'sim2d', 'drone', 'humanoid'];
 
-const categoryImages = {
+const categoryBannerImages = {
+  ssl: sslBannerImage,
+  sim2d: twoDImage,
+  drone: droneImage,
+  humanoid: humanoidImage,
+};
+
+const categoryCardImages = {
   ssl: sslImage,
   sim2d: twoDImage,
   drone: droneImage,
@@ -84,14 +92,15 @@ function ResultsTable({ categoryId, t }) {
 
 function CategorySection({ id, t }) {
   const info = t(`categoriesPage.${id}`, { returnObjects: true });
-  const img = categoryImages[id];
+  const bannerImg = categoryBannerImages[id];
+  const cardImg = categoryCardImages[id];
 
   return (
     <section id={id} className={styles.categorySection}>
       {/* Full-viewport-width banner */}
       <div
         className={styles.banner}
-        style={{ backgroundImage: `url(${img})` }}
+        style={{ backgroundImage: `url(${bannerImg})` }}
         role="img"
         aria-label={info.name}
       >
@@ -104,7 +113,7 @@ function CategorySection({ id, t }) {
       <div className={styles.contentOuter}>
         <div className={styles.contentRow}>
           <div className={styles.squareImageWrapper}>
-            <img src={img} alt={info.name} className={styles.squareImage} />
+            <img src={cardImg} alt={info.name} className={styles.squareImage} />
           </div>
           <div className={styles.descriptionBlock}>
             <p className={styles.descriptionText}>{info.description}</p>
