@@ -71,7 +71,7 @@
     },
     "drone": {
       "name": "Drone",
-      "description": "The Drone category challenges teams to develop autonomous unmanned aerial vehicles capable of navigation, object detection, and interaction tasks in complex indoor environments without any external computing.",
+      "description": "In the Drone category, the team focuses on developing autonomous unmanned aerial vehicles capable of navigating challenging environments, performing aerial manipulation tasks, visual detection, mapping, and precision landings.\nAmong the present challenges, the construction of drones capable of localizing themselves in GPS-denied environments stands out, along with aerial manipulation, package delivery, and target recognition.\n\nTechnical focus: Development of embedded software capable of performing sensor fusion, deep learning-based visual detection, visual-inertial odometry for indoor navigation, and the employment of control algorithms.",
       "bullets": [
         "Onboard processing only — no external computing allowed during flight",
         "Tasks include obstacle avoidance, target recognition, and precision landing",

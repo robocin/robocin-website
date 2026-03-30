@@ -71,7 +71,7 @@
     },
     "drone": {
       "name": "Drone",
-      "description": "A categoria Drone desafia as equipes a desenvolver veículos aéreos não tripulados autônomos capazes de navegação, detecção de objetos e tarefas de interação em ambientes internos complexos, sem computação externa.",
+      "description": "Na categoria de Drones, a equipe foca em desenvolver veículos aéreos autônomos não tripulados capazes de navegar em ambientes desafiadores, realizando tarefas de manipulação aérea, detecção visual, mapeamento e pousos com precisão.\nDentre os desafios presentes, destaca-se a construção de drones capazes de se localizar em ambientes sem GPS (GPS-Denied), a manipulação aérea e entrega de pacotes e reconhecimento de alvos.\n\nFoco técnico: Desenvolvimento do software embarcado capaz de realizar fusão de sensores, detecção visual baseada em aprendizagem profunda, odometria visual-inercial para navegação indoor e emprego de algoritmos de controle.",
       "bullets": [
         "Processamento apenas a bordo — nenhuma computação externa é permitida durante o voo",
         "Tarefas incluem desvio de obstáculos, reconhecimento de alvos e pouso de precisão",
