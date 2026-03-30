@@ -90,7 +90,7 @@ function Publications() {
                   {grouped[year].map((pub) => (
                     <li key={pub.id} className={styles.pubItem}>
                       <div className={styles.pubMeta}>
-                        <span className={styles.venueBadge}>{pub.venue}</span>
+                        {pub.venue && <span className={styles.venueBadge}>{pub.venue}</span>}
                         {activeYear !== ALL && (
                           <span className={styles.yearBadge}>{pub.year}</span>
                         )}
