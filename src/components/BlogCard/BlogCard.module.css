@@ -1,0 +1,80 @@
+.card {
+  background: var(--color-bg);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 6px 20px rgba(70, 156, 87, 0.14);
+  transform: translateY(-3px);
+}
+
+/* ── Colored top bar ── */
+
+.cardTop {
+  background-color: var(--color-primary-dark);
+  height: 110px;
+  display: flex;
+  align-items: flex-end;
+  padding: var(--space-4) var(--space-6);
+}
+
+.tag {
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  padding: var(--space-1) var(--space-3);
+  border-radius: calc(var(--border-radius) / 2);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ── Card body ── */
+
+.cardBody {
+  padding: var(--space-6) var(--space-6) var(--space-8);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.title {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: var(--line-height-heading);
+  margin-bottom: var(--space-3);
+}
+
+.meta {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-4);
+}
+
+.excerpt {
+  font-size: var(--font-size-base);
+  color: var(--color-text-muted);
+  line-height: var(--line-height-base);
+  flex: 1;
+  margin-bottom: var(--space-6);
+}
+
+.cta {
+  display: inline-block;
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: var(--font-size-base);
+  text-decoration: none;
+  transition: color 0.2s;
+  margin-top: auto;
+}
+
+.cta:hover {
+  color: var(--color-primary-dark);
+}

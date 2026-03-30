@@ -1,0 +1,168 @@
+.history {
+  padding: var(--space-16) var(--space-8);
+  background-color: var(--color-bg-alt);
+}
+
+@media (max-width: 768px) {
+  .history {
+    padding: var(--space-8) var(--space-4);
+  }
+}
+
+.content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* ── Heading ── */
+
+.heading {
+  text-align: center;
+  margin-bottom: var(--space-16);
+}
+
+.title {
+  font-size: var(--font-size-3xl);
+  font-weight: 800;
+  line-height: var(--line-height-heading);
+  color: var(--color-primary);
+  margin-bottom: var(--space-4);
+}
+
+.subtitle {
+  font-size: var(--font-size-xl);
+  color: var(--color-text-muted);
+  max-width: var(--max-width-prose);
+  margin: 0 auto;
+}
+
+/* ── Timeline ── */
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Vertical center line */
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background-color: var(--color-border);
+  transform: translateX(-50%);
+}
+
+/* ── Milestone items ── */
+
+.item {
+  position: relative;
+  width: 50%;
+  padding-right: var(--space-8);
+  padding-bottom: var(--space-12);
+  box-sizing: border-box;
+}
+
+.item:last-child {
+  padding-bottom: 0;
+}
+
+.itemRight {
+  margin-left: 50%;
+  padding-right: 0;
+  padding-left: var(--space-8);
+}
+
+/* ── Cards ── */
+
+.card {
+  background: var(--color-bg);
+  border-radius: var(--border-radius);
+  padding: var(--space-6) var(--space-8);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  text-align: right;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgba(70, 156, 87, 0.12);
+  transform: translateY(-2px);
+}
+
+.itemRight .card {
+  text-align: left;
+}
+
+.year {
+  display: block;
+  font-size: var(--font-size-2xl);
+  font-weight: 800;
+  color: var(--color-primary);
+  line-height: 1;
+  margin-bottom: var(--space-2);
+}
+
+.milestoneTitle {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: var(--space-3);
+}
+
+.milestoneDesc {
+  font-size: var(--font-size-base);
+  color: var(--color-text-muted);
+  line-height: var(--line-height-base);
+  margin: 0;
+}
+
+/* ── Dot ── */
+
+.dot {
+  position: absolute;
+  right: -7px;
+  top: var(--space-6);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  border: 3px solid var(--color-bg-alt);
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.itemRight .dot {
+  right: auto;
+  left: -7px;
+}
+
+/* ── Mobile ── */
+
+@media (max-width: 640px) {
+  .timeline::before {
+    left: 7px;
+    transform: none;
+  }
+
+  .item,
+  .itemRight {
+    width: 100%;
+    margin-left: 0;
+    padding-left: calc(14px + var(--space-4));
+    padding-right: 0;
+  }
+
+  .card,
+  .itemRight .card {
+    text-align: left;
+  }
+
+  .dot,
+  .itemRight .dot {
+    right: auto;
+    left: 0;
+  }
+}

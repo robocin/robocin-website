@@ -1,0 +1,138 @@
+{
+  "nav": {
+    "home": "Home",
+    "categories": "Categories",
+    "blog": "Blog",
+    "publications": "Publications"
+  },
+  "hero": {
+    "title": "RobôCIn",
+    "subtitle": "A research and development team from the Federal University of Pernambuco, Brazil, specializing in robotics and artificial intelligence.",
+    "cta": "Meet the team"
+  },
+  "partners": {
+    "title": "Partnerships",
+    "description": "Connect your company to RobôCIn's innovation and expertise to develop intelligent solutions that shape the future of technology.",
+    "cta": "Learn more",
+    "caption": "Who has already trusted our work:"
+  },
+  "categories": {
+    "title": "Categories",
+    "cta": "See more"
+  },
+  "areas": {
+    "title": "Areas of Expertise",
+    "cta": "Explore Categories",
+    "categories": ["Small Size League", "2D Simulation", "Drones", "Humanoids"],
+    "items": ["Artificial Intelligence", "Autonomous Robotics", "Computer Vision", "Embedded Systems"]
+  },
+  "sponsors": {
+    "title": "Sponsors",
+    "ctaText": "Want your brand here?",
+    "ctaButton": "Become a sponsor"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "The latest news, research updates, and insights from the RobôCIn team.",
+    "readMore": "Read more",
+    "minRead": "min read",
+    "backToBlog": "Back to Blog",
+    "alsoRead": "Also read",
+    "loading": "Loading posts…",
+    "empty": "No posts available yet.",
+    "notFound": "Post not found."
+  },
+  "publications": {
+    "title": "Publications",
+    "subtitle": "The academic contributions from the RobôCIn team to the fields of robotics and AI.",
+    "filterLabel": "Filter by year",
+    "filterAll": "All"
+  },
+  "categoriesPage": {
+    "title": "Competition Categories",
+    "description": "RobôCIn competes across four distinct robotics leagues, each presenting unique engineering and AI challenges. Explore each category to learn about our robots, approach, and competition history.",
+    "ssl": {
+      "name": "Small Size League (SSL)",
+      "description": "The SSL is one of the most technically demanding RoboCup leagues. Teams of up to six omni-directional robots compete on a shared field, relying on centralized AI and high-speed computer vision to outmaneuver opponents in real time.",
+      "bullets": [
+        "Robots are constrained to 180 mm diameter and operate at speeds exceeding 3 m/s",
+        "Centralized strategy software processes overhead camera feeds at 60 fps",
+        "Machine learning models drive opponent prediction and dynamic play selection"
+      ]
+    },
+    "sim2d": {
+      "name": "2D Simulation",
+      "description": "In the 2D Simulation league, multi-agent AI systems coach virtual soccer teams inside a physics simulator. With no hardware constraints, teams push the limits of strategy, coordination, and learning algorithms.",
+      "bullets": [
+        "Fully software-based: 11 autonomous agents vs. 11 in a shared 2D environment",
+        "Focus areas include multi-agent reinforcement learning and emergent team tactics",
+        "Competitions run on identical hardware, making algorithmic quality the sole differentiator"
+      ]
+    },
+    "drone": {
+      "name": "Drone",
+      "description": "In the Drone category, the team focuses on developing autonomous unmanned aerial vehicles capable of navigating challenging environments, performing aerial manipulation tasks, visual detection, mapping, and precision landings.\nAmong the present challenges, the construction of drones capable of localizing themselves in GPS-denied environments stands out, along with aerial manipulation, package delivery, and target recognition.\n\nTechnical focus: Development of embedded software capable of performing sensor fusion, deep learning-based visual detection, visual-inertial odometry for indoor navigation, and the employment of control algorithms.",
+      "bullets": [
+        "Onboard processing only — no external computing allowed during flight",
+        "Tasks include obstacle avoidance, target recognition, and precision landing",
+        "Tight integration of computer vision, control theory, and embedded software"
+      ]
+    },
+    "humanoid": {
+      "name": "Humanoid",
+      "description": "Humanoid robots must walk, balance, and play soccer on a small field, showcasing advances in bipedal locomotion, real-time vision, and autonomous decision-making under physical constraints.",
+      "bullets": [
+        "Full bipedal locomotion with dynamic balance and fall recovery",
+        "Onboard vision pipeline for ball and goal detection without external sensors",
+        "Motion planning adapts in real time to field conditions and game state"
+      ]
+    },
+    "table": {
+      "title": "Competition Results",
+      "year": "Year",
+      "showResults": "Show Results",
+      "hideResults": "Hide Results"
+    }
+  },
+  "history": {
+    "title": "Our Journey",
+    "subtitle": "Over one decade advancing Brazilian robotics.",
+    "milestones": [
+      {
+        "year": "2015",
+        "title": "Foundation",
+        "description": "RobôCIn is founded by students and professors at UFPE."
+      },
+      {
+        "year": "2019",
+        "title": "First RoboCup",
+        "description": "The group participates in its first RoboCup, one of the largest international robotics competitions."
+      },
+      {
+        "year": "2021",
+        "title": "Champions (LARC)",
+        "description": "RobôCIn was champion in the 2D Simulation and Very Small Size Soccer (VSS) categories at the Latin American Robotics Competition."
+      },
+      {
+        "year": "2022",
+        "title": "Division B Champions (RoboCup)",
+        "description": "RobôCIn becomes champion in RoboCup Division B in the Small Size League (SSL) category."
+      },
+      {
+        "year": "2023",
+        "title": "Back-to-Back Division B Champions (RoboCup)",
+        "description": "The group becomes two-time champion of RoboCup Division B in the SSL category."
+      },
+      {
+        "year": "2024",
+        "title": "Division A Debut (RoboCup), Champions (FIRA)",
+        "description": "Advances to Division A, reaching 4th place in the SSL category. The group also becomes champion in the drone category at another competition."
+      },
+      {
+        "year": "2025",
+        "title": "Advancing in Division A (RoboCup), Champions (CBR)",
+        "description": "Advances to 3rd place in Division A in the SSL category and wins the Brazilian Robotics Competition in the drone category."
+      }
+    ]
+  }
+}

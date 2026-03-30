@@ -1,0 +1,138 @@
+{
+  "nav": {
+    "home": "Início",
+    "categories": "Categorias",
+    "blog": "Blog",
+    "publications": "Publicações"
+  },
+  "hero": {
+    "title": "RobôCIn",
+    "subtitle": "Equipe de robótica do CIn-UFPE dedicada à competição, pesquisa e desenvolvimento de soluções inovadoras em robótica inteligente.",
+    "cta": "Conheça o RobôCIn"
+  },
+  "partners": {
+    "title": "Parcerias",
+    "description": "Conecte sua empresa à   inovação e expertise   do RobôCIn para desenvolver soluções inteligentes  que moldam o futuro da tecnologia.",
+    "cta": "Saiba mais",
+    "caption": "Quem já confiou no nosso trabalho:"
+  },
+  "categories": {
+    "title": "Categorias",
+    "cta": "Saiba mais"
+  },
+  "areas": {
+    "title": "Áreas de Atuação",
+    "cta": "Conheça as Categorias",
+    "categories": ["Small Size League", "Simulação 2D", "Drones", "Humanoides"],
+    "items": ["Inteligência Artificial", "Robótica Autônoma", "Visão Computacional", "Embarcados"]
+  },
+  "sponsors": {
+    "title": "Patrocinadores",
+    "ctaText": "Quer sua marca aqui?",
+    "ctaButton": "Vire um patrocinador"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "As últimas notícias, atualizações de pesquisa e novidades da equipe RobôCIn.",
+    "readMore": "Leia mais",
+    "minRead": "min de leitura",
+    "backToBlog": "Voltar ao Blog",
+    "alsoRead": "Leia também",
+    "loading": "Carregando posts…",
+    "empty": "Nenhum post disponível ainda.",
+    "notFound": "Post não encontrado."
+  },
+  "publications": {
+    "title": "Publicações",
+    "subtitle": "As contribuições acadêmicas dos membros do RobôCIn às áreas de robótica e IA.",
+    "filterLabel": "Filtrar por ano",
+    "filterAll": "Todas"
+  },
+  "categoriesPage": {
+    "title": "Categorias de Competição",
+    "description": "O RobôCIn compete em quatro ligas distintas de robótica, cada uma com desafios únicos de engenharia e IA. Explore cada categoria para conhecer nossos robôs, abordagem e histórico de competições.",
+    "ssl": {
+      "name": "Small Size League (SSL)",
+      "description": "A SSL é uma das ligas mais tecnicamente exigentes da RoboCup. Times de até seis robôs omnidirecionais disputam em campo compartilhado, dependendo de IA centralizada e visão computacional de alta velocidade para superar os adversários em tempo real.",
+      "bullets": [
+        "Robôs limitados a 180 mm de diâmetro e operam a velocidades superiores a 3 m/s",
+        "Software de estratégia centralizado processa imagens de câmera aérea a 60 fps",
+        "Modelos de aprendizado de máquina impulsionam a previsão de adversários e seleção dinâmica de jogadas"
+      ]
+    },
+    "sim2d": {
+      "name": "Simulação 2D",
+      "description": "Na liga de Simulação 2D, sistemas de IA multi-agente treinam times de futebol virtuais em um simulador físico. Sem restrições de hardware, as equipes empurram os limites de estratégia, coordenação e algoritmos de aprendizado.",
+      "bullets": [
+        "Totalmente baseado em software: 11 agentes autônomos vs. 11 em ambiente 2D compartilhado",
+        "Áreas de foco incluem aprendizado por reforço multi-agente e táticas emergentes de equipe",
+        "Competições rodam em hardware idêntico, tornando a qualidade algorítmica o único diferencial"
+      ]
+    },
+    "drone": {
+      "name": "Drone",
+      "description": "Na categoria de Drones, a equipe foca em desenvolver veículos aéreos autônomos não tripulados capazes de navegar em ambientes desafiadores, realizando tarefas de manipulação aérea, detecção visual, mapeamento e pousos com precisão.\nDentre os desafios presentes, destaca-se a construção de drones capazes de se localizar em ambientes sem GPS (GPS-Denied), a manipulação aérea e entrega de pacotes e reconhecimento de alvos.\n\nFoco técnico: Desenvolvimento do software embarcado capaz de realizar fusão de sensores, detecção visual baseada em aprendizagem profunda, odometria visual-inercial para navegação indoor e emprego de algoritmos de controle.",
+      "bullets": [
+        "Processamento apenas a bordo — nenhuma computação externa é permitida durante o voo",
+        "Tarefas incluem desvio de obstáculos, reconhecimento de alvos e pouso de precisão",
+        "Integração estreita de visão computacional, teoria de controle e software embarcado"
+      ]
+    },
+    "humanoid": {
+      "name": "Humanoide",
+      "description": "Robôs humanoides devem caminhar, equilibrar-se e jogar futebol em campo reduzido, demonstrando avanços em locomoção bípede, visão em tempo real e tomada de decisão autônoma sob restrições físicas.",
+      "bullets": [
+        "Locomoção bípede completa com equilíbrio dinâmico e recuperação de quedas",
+        "Pipeline de visão a bordo para detecção de bola e gol sem sensores externos",
+        "Planejamento de movimento adapta-se em tempo real às condições de campo e estado do jogo"
+      ]
+    },
+    "table": {
+      "title": "Resultados em Competições",
+      "year": "Ano",
+      "showResults": "Ver Resultados",
+      "hideResults": "Ocultar Resultados"
+    }
+  },
+  "history": {
+    "title": "Nossa Trajetória",
+    "subtitle": "Mais de uma década avançando a robótica brasileira.",
+    "milestones": [
+      {
+        "year": "2015",
+        "title": "Fundação",
+        "description": "RobôCIn é fundado por estudantes e professores da UFPE."
+      },
+      {
+        "year": "2019",
+        "title": "Primeira RoboCup",
+        "description": "O grupo participa de sua primeira RoboCup, uma das maiores competições internacionais de robótica."
+      },
+      {
+        "year": "2021",
+        "title": "Campeões (LARC)",
+        "description": "O RobôCIn foi campeão nas categorias de simulação 2D e Very Small Size Soccer (VSS) na competição de robótica latino-americana."
+      },
+      {
+        "year": "2022",
+        "title": "Campeões da Divisão B (RoboCup)",
+        "description": "O RobôCIn é campeão na divisão B da RoboCup na categoria Small Size League (SSL)."
+      },
+      {
+        "year": "2023",
+        "title": "Bicampeões da Divisão B (RoboCup)",
+        "description": "O grupo se torna bicampeão da divisão B na categoria SSL."
+      },
+      {
+        "year": "2024",
+        "title": "Estreia na Divisão A (RoboCup), campeões (FIRA)",
+        "description": "Avança para a divisão A, alcançando o 4º lugar na categoria de SSL. O grupo também é campeão na categoria de drones em outra competição."
+      },
+      {
+        "year": "2025",
+        "title": "Avanço na Divisão A (RoboCup), campeões (CBR)",
+        "description": "Progride para 3º lugar da divisão A na categoria SSL e vence a Competição Brasileira de Robótica na categoria de drones."
+      }
+    ]
+  }
+}

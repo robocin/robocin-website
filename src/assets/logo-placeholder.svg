@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="36" viewBox="0 0 120 36">
+  <rect width="120" height="36" rx="4" fill="#0057b8"/>
+  <text x="60" y="24" font-family="system-ui, sans-serif" font-size="14" font-weight="700"
+        fill="#ffd700" text-anchor="middle">RobôCIn</text>
+</svg>
