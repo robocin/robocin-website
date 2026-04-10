@@ -53,11 +53,11 @@
     "description": "O RobôCIn compete em quatro ligas distintas de robótica, cada uma com desafios únicos de engenharia e IA. Explore cada categoria para conhecer nossos robôs, abordagem e histórico de competições.",
     "ssl": {
       "name": "Small Size League (SSL)",
-      "description": "A SSL é uma das ligas mais tecnicamente exigentes da RoboCup. Times de até seis robôs omnidirecionais disputam em campo compartilhado, dependendo de IA centralizada e visão computacional de alta velocidade para superar os adversários em tempo real.",
+      "description": "A SSL é uma das ligas mais antigas das ligas de futebol da RoboCup. Ela é focada em coordenação inteligente e controle de múltiplos agentes em um ambiente altamente dinâmico. Os times competem em partidas de futebol de até 11 robôs, contando com visão computacional e software de estratégia centralizado para superar os outros adversários em tempo real.",
       "bullets": [
-        "Robôs limitados a 180 mm de diâmetro e operam a velocidades superiores a 3 m/s",
-        "Software de estratégia centralizado processa imagens de câmera aérea a 60 fps",
-        "Modelos de aprendizado de máquina impulsionam a previsão de adversários e seleção dinâmica de jogadas"
+        "Robôs construídos pelas próprias equipes, contando com sistemas de chute, passe e drible e limitados a 180mm de diâmetro",
+        "Software fora do campo faz fusão dos dados de visão aérea com telemetria dos agentes para decidir de forma autônoma a melhor jogada para cada robô",
+        "Estratégias reais de futebol são aplicadas para lidar com velocidades de bola de até 6,5m/s"
       ]
     },
     "sim2d": {

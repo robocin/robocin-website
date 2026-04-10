@@ -53,11 +53,11 @@
     "description": "RobôCIn competes across four distinct robotics leagues, each presenting unique engineering and AI challenges. Explore each category to learn about our robots, approach, and competition history.",
     "ssl": {
       "name": "Small Size League (SSL)",
-      "description": "The SSL is one of the most technically demanding RoboCup leagues. Teams of up to six omni-directional robots compete on a shared field, relying on centralized AI and high-speed computer vision to outmaneuver opponents in real time.",
+      "description": "The SSL is one of the oldest football leagues in RoboCup. It is focused on intelligent coordination and control of multiple agents in a highly dynamic environment. Teams compete in football matches with up to 11 robots, relying on computer vision and centralized strategy software to outmaneuver opponents in real time.",
       "bullets": [
-        "Robots are constrained to 180 mm diameter and operate at speeds exceeding 3 m/s",
-        "Centralized strategy software processes overhead camera feeds at 60 fps",
-        "Machine learning models drive opponent prediction and dynamic play selection"
+        "Robots built by the teams themselves, featuring kicking, passing, and dribbling systems, and limited to 180mm in diameter",
+        "Off-field software fuses overhead vision data with agent telemetry to autonomously decide the best play for each robot",
+        "Real football strategies are applied to handle ball speeds of up to 6.5 m/s"
       ]
     },
     "sim2d": {
