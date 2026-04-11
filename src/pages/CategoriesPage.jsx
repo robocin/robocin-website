@@ -49,6 +49,10 @@ function ResultsTable({ categoryId, t }) {
   const [open, setOpen] = useState(false);
   const data = categoryData[categoryId];
 
+  const hasCbrFootnote =
+    data.competitions.includes('CBR') &&
+    data.rows.some((row) => row.year < 2025 && row.results['CBR'] !== undefined);
+
   return (
     <div className={styles.resultsOuter}>
       <div className={styles.resultsInner}>
@@ -62,28 +66,33 @@ function ResultsTable({ categoryId, t }) {
         </button>
 
         {open && (
-          <div className={styles.tableScroll}>
-            <table className={styles.table}>
-              <thead>
-                <tr>
-                  <th>{t('categoriesPage.table.year')}</th>
-                  {data.competitions.map((comp) => (
-                    <th key={comp}>{comp}</th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {data.rows.map((row) => (
-                  <tr key={row.year}>
-                    <td className={styles.yearCell}>{row.year}</td>
+          <>
+            <div className={styles.tableScroll}>
+              <table className={styles.table}>
+                <thead>
+                  <tr>
+                    <th>{t('categoriesPage.table.year')}</th>
                     {data.competitions.map((comp) => (
-                      <td key={comp}>{row.results[comp] ?? '—'}</td>
+                      <th key={comp}>{comp === 'CBR' && hasCbrFootnote ? 'CBR*' : comp}</th>
                     ))}
                   </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+                </thead>
+                <tbody>
+                  {data.rows.map((row) => (
+                    <tr key={row.year}>
+                      <td className={styles.yearCell}>{row.year}</td>
+                      {data.competitions.map((comp) => (
+                        <td key={comp}>{row.results[comp] ?? '—'}</td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            {hasCbrFootnote && (
+              <p className={styles.cbrFootnote}>{t('categoriesPage.table.cbrFootnote')}</p>
+            )}
+          </>
         )}
       </div>
     </div>

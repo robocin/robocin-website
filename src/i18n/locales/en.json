@@ -91,7 +91,8 @@
       "title": "Competition Results",
       "year": "Year",
       "showResults": "Show Results",
-      "hideResults": "Hide Results"
+      "hideResults": "Hide Results",
+      "cbrFootnote": "* CBR results prior to 2025 correspond to the LARC competition, which was renamed to CBR in 2025."
     }
   },
   "history": {

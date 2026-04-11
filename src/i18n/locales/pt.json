@@ -91,7 +91,8 @@
       "title": "Resultados em Competições",
       "year": "Ano",
       "showResults": "Ver Resultados",
-      "hideResults": "Ocultar Resultados"
+      "hideResults": "Ocultar Resultados",
+      "cbrFootnote": "* Os resultados da CBR anteriores a 2025 correspondem à competição LARC, que foi renomeada para CBR em 2025."
     }
   },
   "history": {

@@ -274,6 +274,13 @@
   white-space: nowrap;
 }
 
+.cbrFootnote {
+  margin-top: var(--space-2);
+  font-size: 0.75rem;
+  color: var(--color-text-muted, #6b7280);
+  font-style: italic;
+}
+
 /* ── Responsive ── */
 
 @media (max-width: 768px) {
